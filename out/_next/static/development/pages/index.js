@@ -67679,7 +67679,7 @@ Link.propTypes = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fben%2FDocuments%2Fsei%2Ftmp%2Fnextjs%2Fpages%2Findex.js ***!
   \***********************************************************************************************************************************/
@@ -67702,5 +67702,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

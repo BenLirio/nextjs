@@ -19373,11 +19373,12 @@ var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["create
         gridTemplateColumns: "[full-start] 0 [center-start] repeat(4, [col-start] 1fr [col-end]) [center-end] 0 [full-end]",
         gridColumnGap: '1rem'
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_test, "@media (min-width:".concat(value.sm).concat(unit, ")"), {
-        background: '#f00'
+        gridTemplateColumns: "[full-start] 1fr [center-start] repeat(4, [col-start] 3fr [col-end]) [center-end] 1fr [full-end]"
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_test, "@media (min-width:".concat(value.md).concat(unit, ")"), {
-        background: '#0f0'
+        gridTemplateColumns: "[full-start] 1fr [center-start] repeat(6, [col-start] 2fr [col-end]) [center-end] 1fr [full-end]",
+        gridColumnGap: '2rem'
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_test, "@media (min-width:".concat(value.lg).concat(unit, ")"), {
-        background: '#00f'
+        gridTemplateColumns: "[full-start] 1fr [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end]"
       }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_test, "@media (min-width:".concat(value.xl).concat(unit, ")"), {
         background: '#ff0'
       }), _test),
