@@ -1,0 +1,98 @@
+webpackHotUpdate("static/development/pages/index.js",{
+
+/***/ "./components/Home/Features.js":
+/*!*************************************!*\
+  !*** ./components/Home/Features.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Home/Features.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(function (theme) {
+  return {
+    root: {
+      width: '100%',
+      height: '100%',
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3, 1fr)',
+      gridGap: '2vw'
+    },
+    feature: {
+      borderRadius: theme.shape.borderRadius,
+      background: theme.palette.background.paper,
+      boxShadow: theme.shadows[1]
+    }
+  };
+});
+
+var Features = function Features() {
+  var classes = useStyles();
+  return __jsx("div", {
+    className: classes.root,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, __jsx("div", {
+    className: classes.feature,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }), __jsx("div", {
+    className: classes.feature,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }), __jsx("div", {
+    className: classes.feature,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Features);
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
+false,
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js":
+false,
+
+/***/ "./node_modules/core-js/library/fn/object/define-properties.js":
+false,
+
+/***/ "./node_modules/core-js/library/fn/object/get-own-property-descriptors.js":
+false,
+
+/***/ "./node_modules/core-js/library/modules/_create-property.js":
+false,
+
+/***/ "./node_modules/core-js/library/modules/_own-keys.js":
+false,
+
+/***/ "./node_modules/core-js/library/modules/es6.object.define-properties.js":
+false,
+
+/***/ "./node_modules/core-js/library/modules/es7.object.get-own-property-descriptors.js":
+false
+
+})
+//# sourceMappingURL=index.js.053ef1694c8592a8a275.hot-update.js.map

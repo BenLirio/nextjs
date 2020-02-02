@@ -4,11 +4,11 @@ import Footer from './Footer'
 import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
-  root: {
+  test: {
     display: 'grid',
     minHeight: '100vh',
     background: theme.palette.background.default,
-    gridTemplateColumns: theme.grid.template.columns,
+    ...theme.grid.template.test,
     justifyContent: 'start',
     gridRowGap: '2rem'
   }
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div className={classes.root}>{children}</div>
+      <div className={classes.test}>{children}</div>
       <Footer />
     </>
   )

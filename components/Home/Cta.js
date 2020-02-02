@@ -6,13 +6,13 @@ const useStyles = makeStyles(theme => ({
     display: 'grid',
     alignItems: 'center',
     height: '100%',
-    gridTemplateColumns: theme.grid.template.columns
+    ...theme.grid.template.test
   },
   button: {
-    gridColumn: 'col-start 8 / col-end 8'
+    gridColumn: '-3 / -2'
   },
   text: {
-    gridColumn: 'col-start 1 / col-end 4'
+    gridColumn: 'col-start 1 / col-end 3'
   }
 }))
 
