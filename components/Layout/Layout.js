@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
+import Header from '../Header'
+import Footer from '../Footer'
 import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
     display: 'grid',
     minHeight: '100vh',
     background: theme.palette.background.default,
-    ...theme.grid.template.test,
+    ...theme.grid.template.columns,
     justifyContent: 'start',
     gridRowGap: '2rem'
   }

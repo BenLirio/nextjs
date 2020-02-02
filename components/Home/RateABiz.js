@@ -6,7 +6,7 @@ import { Rating } from '@material-ui/lab'
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'grid',
-    ...theme.grid.template.test
+    ...theme.grid.template.columns
   },
   card: {
     gridColumn: 'center-start / center-end'

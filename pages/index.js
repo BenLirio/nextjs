@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import Layout from '../components/Layout/Layout'
 import { makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
 import FeatureImage from '../components/Home/FeatureImage'
@@ -10,15 +10,14 @@ import rating_local from '../data/rating_local'
 import About from '../components/Home/About'
 import Cta from '../components/Home/Cta'
 import Map from '../components/Home/Map'
+import Section from '../components/Layout/Section'
 
 const API_URL =
   'https://s3.amazonaws.com/cdn.rateabiz.com/reviews/ce34016f3fd1daf75a0daca4eb322873/reviews.json'
 
 const useStyles = makeStyles(theme => ({
   root: {},
-  full: {
-    gridColumn: 'full-start / full-end'
-  },
+  full: theme.grid.span.full,
   center: {
     gridColumn: 'center-start / center-end'
   },
@@ -48,9 +47,9 @@ export default function Index({ reviews, stats }) {
   const classes = useStyles()
   return (
     <Layout>
-      <div className={clsx(classes.featureImage, classes.full)}>
+      <Section width="full" height={4} variant="percent">
         <FeatureImage />
-      </div>
+      </Section>
       <div className={clsx(classes.features, classes.center)}>
         <Features />
       </div>

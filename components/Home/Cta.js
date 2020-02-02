@@ -6,7 +6,7 @@ const useStyles = makeStyles(theme => ({
     display: 'grid',
     alignItems: 'center',
     height: '100%',
-    ...theme.grid.template.test
+    ...theme.grid.template.columns
   },
   button: {
     gridColumn: '-3 / -2'
