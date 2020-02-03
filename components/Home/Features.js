@@ -4,7 +4,10 @@ import { makeStyles } from '@material-ui/core'
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
-    height: '100%',
+    height: theme.sizes.responsive[3],
+    [theme.breakpoints.up('md')]: {
+      height: theme.sizes.static[3]
+    },
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridGap: '2vw'

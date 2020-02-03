@@ -28,6 +28,24 @@ const useStyles = makeStyles(theme => ({
     background: theme.palette.primary.light,
     gridColumn: '1',
     gridRow: 'img3-start / img3-end'
+  },
+  [theme.breakpoints.down('sm')]: {
+    root: {
+      gridTemplateRows: `${theme.sizes.static[2]} ${theme.sizes.static[4]}`,
+      gridTemplateColumns: '1fr'
+    },
+    aboutImage2: {
+      display: 'none'
+    },
+    aboutImage3: {
+      display: 'none'
+    },
+    aboutImage1: {
+      gridRow: '2'
+    },
+    aboutText: {
+      gridRow: '1'
+    }
   }
 }))
 

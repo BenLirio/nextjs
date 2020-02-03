@@ -1,6 +1,12 @@
 //https://s3.amazonaws.com/cdn.rateabiz.com/reviews/ce34016f3fd1daf75a0daca4eb322873/reviews.json
 import React from 'react'
-import { makeStyles, Typography, Card, CardContent } from '@material-ui/core'
+import {
+  makeStyles,
+  Typography,
+  Card,
+  CardContent,
+  CardHeader
+} from '@material-ui/core'
 import { Rating } from '@material-ui/lab'
 
 const useStyles = makeStyles(theme => ({

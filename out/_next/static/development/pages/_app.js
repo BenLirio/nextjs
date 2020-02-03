@@ -3183,7 +3183,7 @@ var defaultTheme = Object(_createMuiTheme__WEBPACK_IMPORTED_MODULE_0__["default"
 /*!************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/styles/index.js ***!
   \************************************************************/
-/*! exports provided: hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, easing, duration, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider */
+/*! exports provided: createMuiTheme, createStyles, makeStyles, responsiveFontSizes, styled, useTheme, withStyles, withTheme, createGenerateClassName, jssPreset, ServerStyleSheets, StylesProvider, MuiThemeProvider, ThemeProvider, hexToRgb, rgbToHex, hslToRgb, decomposeColor, recomposeColor, getContrastRatio, getLuminance, emphasize, fade, darken, lighten, easing, duration */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19352,7 +19352,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/colors */ "./node_modules/@material-ui/core/esm/colors/index.js");
 
 
-var _test;
+var _static, _responsive, _percent;
 
 
 
@@ -19367,23 +19367,10 @@ var unit = 'px';
 var step = 5; // Create a theme instance.
 
 var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createMuiTheme"])({
-  grid: {
-    template: {
-      test: (_test = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_test, "@media (min-width:".concat(value.xs).concat(unit, ")"), {
-        gridTemplateColumns: "[full-start] 0 [center-start] repeat(4, [col-start] 1fr [col-end]) [center-end] 0 [full-end]",
-        gridColumnGap: '1rem'
-      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_test, "@media (min-width:".concat(value.sm).concat(unit, ")"), {
-        gridTemplateColumns: "[full-start] 1fr [center-start] repeat(4, [col-start] 3fr [col-end]) [center-end] 1fr [full-end]"
-      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_test, "@media (min-width:".concat(value.md).concat(unit, ")"), {
-        gridTemplateColumns: "[full-start] 1fr [center-start] repeat(6, [col-start] 2fr [col-end]) [center-end] 1fr [full-end]",
-        gridColumnGap: '2rem'
-      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_test, "@media (min-width:".concat(value.lg).concat(unit, ")"), {
-        gridTemplateColumns: "[full-start] 1fr [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end]"
-      }), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_test, "@media (min-width:".concat(value.xl).concat(unit, ")"), {
-        background: '#ff0'
-      }), _test),
-      columns: '[full-start] 1fr [center-start] repeat(8, [col-start] 8rem [col-end]) [center-end] 1fr [full-end]'
-    }
+  sizes: {
+    "static": (_static = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 1, '100px'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 2, '250px'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 3, '300px'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 4, '500px'), _static),
+    responsive: (_responsive = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 1, '10vw'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 2, '20vw'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 3, '35vw'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 4, '50vw'), _responsive),
+    percent: (_percent = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 1, '10vh'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 2, '30vh'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 3, '50vh'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 4, '70vh'), _percent)
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (theme);

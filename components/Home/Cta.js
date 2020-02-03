@@ -1,32 +1,29 @@
 import React from 'react'
-import { makeStyles, Button, Typography } from '@material-ui/core'
+import { makeStyles, Button, Typography, Grid } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    display: 'grid',
-    alignItems: 'center',
-    height: '100%',
-    ...theme.grid.template.columns
-  },
-  button: {
-    gridColumn: '-3 / -2'
-  },
-  text: {
-    gridColumn: 'col-start 1 / col-end 3'
-  }
+  root: {}
 }))
 
 const Cta = () => {
   const classes = useStyles()
   return (
-    <div className={classes.root}>
-      <Typography className={classes.text} variant="h2">
-        Try today
-      </Typography>
-      <Button className={classes.button} variant="contained" color="primary">
-        Try now
-      </Button>
-    </div>
+    <Grid
+      container
+      direction="column"
+      justify="center"
+      alignItems="center"
+      spacing={2}
+    >
+      <Grid item xs={8}>
+        <Typography variant="h3">Call today</Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Button variant="contained" color="secondary">
+          (616)-123-4321
+        </Button>
+      </Grid>
+    </Grid>
   )
 }
 

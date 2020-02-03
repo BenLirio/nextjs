@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
   map: {
     background: 'url("/map.png")',
     width: '100%',
-    height: '100%',
+    height: theme.sizes.responsive[3],
     backgroundSize: 'cover',
     backgroundPosition: 'center'
   }

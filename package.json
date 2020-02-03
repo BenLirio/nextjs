@@ -4,13 +4,15 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.40",
     "clsx": "latest",
     "isomorphic-unfetch": "^3.0.0",
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-window": "^1.8.5"
   },
   "scripts": {
     "dev": "next",

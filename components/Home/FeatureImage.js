@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
+import Image from '../Image'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -12,8 +13,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const FeatureImage = () => {
-  const classes = useStyles()
-  return <img className={classes.root}></img>
+  return <Image opacity={50} src="feature_img_mobile.png"></Image>
 }
 
 export default FeatureImage
