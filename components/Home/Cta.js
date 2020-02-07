@@ -1,29 +1,29 @@
 import React from 'react'
-import { makeStyles, Button, Typography, Grid } from '@material-ui/core'
-
-const useStyles = makeStyles(theme => ({
-  root: {}
-}))
+import {
+  makeStyles,
+  Button,
+  Typography,
+  Grid,
+  Card,
+  CardHeader,
+  CardActions,
+  CardContent
+} from '@material-ui/core'
 
 const Cta = () => {
-  const classes = useStyles()
   return (
-    <Grid
-      container
-      direction="column"
-      justify="center"
-      alignItems="center"
-      spacing={2}
-    >
-      <Grid item xs={8}>
-        <Typography variant="h3">Call today</Typography>
-      </Grid>
-      <Grid item xs={12}>
-        <Button variant="contained" color="secondary">
-          (616)-123-4321
-        </Button>
-      </Grid>
-    </Grid>
+    <Card>
+      <CardHeader title="learn more today" subheader="it will be worth it" />
+      <CardContent>
+        <Typography>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo qui hic
+          quasi. Aperiam vel quia eius reiciendis quod architecto aspernatur.
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button>Now</Button>
+      </CardActions>
+    </Card>
   )
 }
 

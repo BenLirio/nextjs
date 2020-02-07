@@ -1,5 +1,44 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
+/***/ "./components/shared/theme.js":
+/*!************************************!*\
+  !*** ./components/shared/theme.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/colors */ "./node_modules/@material-ui/core/esm/colors/index.js");
+
+
+var _static, _responsive, _percent;
+
+
+
+var value = {
+  xs: 0,
+  sm: 600,
+  md: 960,
+  lg: 1280,
+  xl: 1920
+};
+var unit = 'px';
+var step = 5; // Create a theme instance.
+
+var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createMuiTheme"])({
+  sizes: {
+    "static": (_static = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 1, '100px'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 2, '250px'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 3, '300px'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 4, '500px'), _static),
+    responsive: (_responsive = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 1, '10vw'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 2, '20vw'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 3, '35vw'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 4, '50vw'), _responsive),
+    percent: (_percent = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 1, '10vh'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 2, '30vh'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 3, '50vh'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 4, '70vh'), _percent)
+  }
+});
+/* harmony default export */ __webpack_exports__["default"] = (theme);
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
@@ -19239,7 +19278,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 /* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "./node_modules/@material-ui/core/esm/CssBaseline/index.js");
-/* harmony import */ var _src_theme__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../src/theme */ "./src/theme.js");
+/* harmony import */ var _components_shared_theme__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/shared/theme */ "./components/shared/theme.js");
 
 
 
@@ -19248,12 +19287,18 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/pages/_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
+ // Next has a special app component
 
+ // This is the same head that next has in _document
+// why is it here
 
+ // Theme provider is the context provider for material ui
 
+ // Normalize css for material ui
 
+ // Import the theme that was created in src
 
-
+ // Customize the APP that next creates
 
 var MyApp =
 /*#__PURE__*/
@@ -19268,9 +19313,10 @@ function (_App) {
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(MyApp, [{
     key: "componentDidMount",
+    // Happens when the app first mounts
     value: function componentDidMount() {
       // Remove the server-side injected CSS.
-      var jssStyles = document.querySelector('#jss-server-side');
+      var jssStyles = document.querySelector('#jss-server-side'); // So I don't think I can style without material if it will just remove them here
 
       if (jssStyles) {
         jssStyles.parentElement.removeChild(jssStyles);
@@ -19279,25 +19325,30 @@ function (_App) {
   }, {
     key: "render",
     value: function render() {
+      // App gets passed a Component and pageProps
       var _this$props = this.props,
           Component = _this$props.Component,
-          pageProps = _this$props.pageProps;
+          pageProps = _this$props.pageProps; // It is itself a component as well
+      // Contains site meta data and renders the passed in component
+      // this is a wrapper component which wraps the page passed into a head and theme provider
+      // this is just for style reasons.
+
       return __jsx(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 35
         },
         __self: this
       }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_8___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 36
         },
         __self: this
       }, __jsx("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 37
         },
         __self: this
       }, "My page"), __jsx("meta", {
@@ -19305,26 +19356,26 @@ function (_App) {
         content: "minimum-scale=1, initial-scale=1, width=device-width",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 38
         },
         __self: this
       })), __jsx(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_9__["ThemeProvider"], {
-        theme: _src_theme__WEBPACK_IMPORTED_MODULE_11__["default"],
+        theme: _components_shared_theme__WEBPACK_IMPORTED_MODULE_11__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 43
         },
         __self: this
       }, __jsx(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 45
         },
         __self: this
       }), __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 46
         },
         __self: this
       }))));
@@ -19335,45 +19386,6 @@ function (_App) {
 }(next_app__WEBPACK_IMPORTED_MODULE_7___default.a);
 
 
-
-/***/ }),
-
-/***/ "./src/theme.js":
-/*!**********************!*\
-  !*** ./src/theme.js ***!
-  \**********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
-/* harmony import */ var _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/colors */ "./node_modules/@material-ui/core/esm/colors/index.js");
-
-
-var _static, _responsive, _percent;
-
-
-
-var value = {
-  xs: 0,
-  sm: 600,
-  md: 960,
-  lg: 1280,
-  xl: 1920
-};
-var unit = 'px';
-var step = 5; // Create a theme instance.
-
-var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createMuiTheme"])({
-  sizes: {
-    "static": (_static = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 1, '100px'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 2, '250px'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 3, '300px'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_static, 4, '500px'), _static),
-    responsive: (_responsive = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 1, '10vw'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 2, '20vw'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 3, '35vw'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_responsive, 4, '50vw'), _responsive),
-    percent: (_percent = {}, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 1, '10vh'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 2, '30vh'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 3, '50vh'), Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_percent, 4, '70vh'), _percent)
-  }
-});
-/* harmony default export */ __webpack_exports__["default"] = (theme);
 
 /***/ }),
 

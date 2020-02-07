@@ -1,10 +1,20 @@
 import React from 'react'
+// These are special next js helper components
 import Document, { Head, Main, NextScript } from 'next/document'
+// Material ui created special server side style sheets to render
 import { ServerStyleSheets } from '@material-ui/core/styles'
-import theme from '../src/theme'
+// The theme so style is uniform
+import theme from '../components/shared/theme'
 
+// Next document customized
 export default class MyDocument extends Document {
+  // It is a component type
   render() {
+    // With just a return
+    // Basically I am able to customize the returned react document
+    // This is done behind the scenes if I don't specify it
+    // Loads the primary color, then fonts, then main, then next script
+    // Which is react bundled up into server sided rendering.
     return (
       <html lang="en">
         <Head>

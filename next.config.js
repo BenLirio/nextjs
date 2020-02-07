@@ -3,9 +3,9 @@ module.exports = {
   exportPathMap: async function() {
     const paths = {
       '/': { page: '/' },
-      '/about/': { page: '/about' },
       '/about': { page: '/about' },
-      '/services': { page: '/services' }
+      '/services': { page: '/services' },
+      '/new-patient': { page: '/new-patient' }
     }
 
     return paths

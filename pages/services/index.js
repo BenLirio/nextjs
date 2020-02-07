@@ -8,21 +8,9 @@ import { Typography } from '@material-ui/core'
 
 const services = () => {
   return (
-    <div></div>
-    // <Layout>
-    //   <Section>
-    //     <Typography variant="h1">Services</Typography>
-    //   </Section>
-    //   <Section>
-    //     <Cosmetic />
-    //   </Section>
-    //   <Section>
-    //     <Preventative />
-    //   </Section>
-    //   <Section>
-    //     <Xray />
-    //   </Section>
-    // </Layout>
+    <Layout>
+      <div></div>
+    </Layout>
   )
 }
 
