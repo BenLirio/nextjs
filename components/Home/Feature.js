@@ -11,6 +11,7 @@ import {
 import FavoriteIcon from '@material-ui/icons/Favorite'
 import RestoreIcon from '@material-ui/icons/Restore'
 import AssignmentIcon from '@material-ui/icons/Assignment'
+import Link from '../shared/Link'
 
 const Feature = ({ label }) => {
   return (
@@ -23,7 +24,9 @@ const Feature = ({ label }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button color="primary">Learn more</Button>
+        <Button color="primary" href="/services" component={Link} naked>
+          Learn more
+        </Button>
       </CardActions>
     </Card>
   )

@@ -4,7 +4,8 @@ import {
   Grid,
   Hidden,
   makeStyles,
-  Typography
+  Typography,
+  Fade
 } from '@material-ui/core'
 import React from 'react'
 import Cta from '../components/Home/Cta'
@@ -24,6 +25,7 @@ import data from '../js/RateABiz/data.json'
 import Ada from '../components/Home/Ada'
 import ServiceList from '../components/Home/ServiceList'
 import WidgetMobile from '../components/Home/RateABiz/WidgetMobile'
+import Map from '../components/Home/Map'
 
 const useStyles = makeStyles(theme => ({
   fullWidth: {
@@ -37,7 +39,7 @@ const useStyles = makeStyles(theme => ({
 export default function Index({ reviews, stats }) {
   const classes = useStyles()
   return (
-    <Layout>
+    <Fade in={true}>
       <Grid container spacing={5}>
         <Grid item xs={12}>
           <Box height="60vh" className={classes.fullWidth}>
@@ -162,12 +164,12 @@ export default function Index({ reviews, stats }) {
         <Grid item xs={12} container justify="center">
           <Grid item xs={12} md={8}>
             <Box height={500} bgcolor="primary.main">
-              <Image src="home/map.png" />
+              <Map />
             </Box>
           </Grid>
         </Grid>
       </Grid>
-    </Layout>
+    </Fade>
   )
 }
 

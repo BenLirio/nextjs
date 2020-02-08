@@ -165,8 +165,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_Restore__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Restore__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Assignment */ "./node_modules/@material-ui/icons/Assignment.js");
 /* harmony import */ var _material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _shared_Link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../shared/Link */ "./components/shared/Link.js");
 var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Home/Feature.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -178,20 +180,20 @@ var Feature = function Feature(_ref) {
   return __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardContent"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     variant: "h6",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, label), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -199,20 +201,23 @@ var Feature = function Feature(_ref) {
     color: "textSecondary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, rem?")), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardActions"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
     color: "primary",
+    href: "/services",
+    component: _shared_Link__WEBPACK_IMPORTED_MODULE_5__["default"],
+    naked: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, "Learn more")));
@@ -252,6 +257,42 @@ var FeatureImage = function FeatureImage() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (FeatureImage);
+
+/***/ }),
+
+/***/ "./components/Home/Map.js":
+/*!********************************!*\
+  !*** ./components/Home/Map.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Home/Map.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+var Map = function Map() {
+  var width = 400;
+  var height = 400;
+  var zoom = 14;
+  var key = 'AIzaSyA2A1xc8sr0OQpnDuwyj0kv4LCSw7jMMlA';
+  var center = 'Berkeley,CA';
+  return __jsx("img", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Map);
 
 /***/ }),
 
@@ -1608,10 +1649,10 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ "./components/Layout/Header.js":
-/*!*************************************!*\
-  !*** ./components/Layout/Header.js ***!
-  \*************************************/
+/***/ "./components/Layout/Header/Banner.js":
+/*!********************************************!*\
+  !*** ./components/Layout/Header/Banner.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1620,13 +1661,122 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _shared_Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Link */ "./components/shared/Link.js");
+/* harmony import */ var _shared_Image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/Image */ "./components/shared/Image.js");
+/* harmony import */ var _Hours__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Hours */ "./components/Layout/Header/Hours.js");
+var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Header/Banner.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+var Banner = function Banner() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      open = _useState[0],
+      setOpen = _useState[1];
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Dialog"], {
+    onClose: function onClose() {
+      return setOpen(false);
+    },
+    open: open,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx(_Hours__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    p: 2,
+    bgcolor: "background.default",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 1,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx(_shared_Image__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    src: "home/favicon.ico",
+    size: "contain",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    variant: "contained",
+    color: "secondary",
+    onClick: function onClick() {
+      return setOpen(true);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "Hours & location")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Banner);
+
+/***/ }),
+
+/***/ "./components/Layout/Header/Header.js":
+/*!********************************************!*\
+  !*** ./components/Layout/Header/Header.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _shared_Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../shared/Link */ "./components/shared/Link.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _NavLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavLink */ "./components/Layout/NavLink.js");
-/* harmony import */ var _components_shared_Image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/shared/Image */ "./components/shared/Image.js");
-var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Header.js";
+/* harmony import */ var _NavLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../NavLink */ "./components/Layout/NavLink.js");
+/* harmony import */ var _shared_Image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../shared/Image */ "./components/shared/Image.js");
+/* harmony import */ var _Banner__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Banner */ "./components/Layout/Header/Banner.js");
+var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Header/Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -1641,57 +1791,28 @@ var Header = function Header() {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["AppBar"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
-    mdDown: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
-    height: 80,
-    bgcolor: "background.default",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
-  }, __jsx("div", {
-    style: {
-      display: 'flex',
-      width: '100%',
-      height: '100%'
-    },
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
+    smDown: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: this
-  }, __jsx("div", {
-    style: {
-      width: '100px'
-    },
+  }, __jsx(_Banner__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 16
     },
     __self: this
-  }, __jsx(_components_shared_Image__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    src: "home/favicon.ico",
-    size: "contain",
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
+    value: /\/?[^\/]*/.exec(pathname)[0],
+    variant: "fullWidth",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }))))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
-    value: pathname,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 18
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], {
@@ -1702,18 +1823,18 @@ var Header = function Header() {
     label: "Home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 19
     },
     __self: this
   }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], {
-    href: "/about/",
-    value: "/about",
+    href: "/new-patient/",
+    value: "/new-patient",
     component: _shared_Link__WEBPACK_IMPORTED_MODULE_2__["default"],
     naked: true,
-    label: "about",
+    label: "New Patient",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 20
     },
     __self: this
   }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], {
@@ -1724,10 +1845,34 @@ var Header = function Header() {
     label: "services",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 27
     },
     __self: this
-  }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
+  }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], {
+    href: "/about/",
+    value: "/about",
+    component: _shared_Link__WEBPACK_IMPORTED_MODULE_2__["default"],
+    naked: true,
+    label: "about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
+    smDown: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, __jsx(_Banner__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 46
@@ -1737,6 +1882,85 @@ var Header = function Header() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/Layout/Header/Hours.js":
+/*!*******************************************!*\
+  !*** ./components/Layout/Header/Hours.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Header/Hours.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+var Hours = function Hours() {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["DialogTitle"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "Hours"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["DialogContent"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["DialogContentText"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "Monday: 8am - 8pm"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["DialogContentText"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "Monday: 8am - 8pm"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["DialogContentText"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "Monday: 8am - 8pm"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["DialogContentText"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "Monday: 8am - 8pm"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["DialogContentText"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, "Monday: 8am - 8pm"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["DialogContentText"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Monday: 8am - 8pm"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["DialogContentText"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Monday: 8am - 8pm")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Hours);
 
 /***/ }),
 
@@ -1751,32 +1975,34 @@ var Header = function Header() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Layout/Header.js");
+/* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header/Header */ "./components/Layout/Header/Header.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Layout/Footer.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Layout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
+
 var Layout = function Layout(_ref) {
   var children = _ref.children;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }), __jsx("div", {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Container"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
+    },
+    __self: this
+  }, children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
     },
     __self: this
   }));
@@ -1968,7 +2194,7 @@ function Link(props) {
     }, other, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 45
       },
       __self: this
     }));
@@ -1982,7 +2208,7 @@ function Link(props) {
   }, other, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 55
     },
     __self: this
   }));
@@ -2003,7 +2229,7 @@ Link.propTypes = {
     innerRef: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 77
     },
     __self: this
   }));
@@ -43118,7 +43344,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!****************************************************!*\
   !*** ./node_modules/@material-ui/lab/esm/index.js ***!
   \****************************************************/
-/*! exports provided: Alert, AlertTitle, Autocomplete, createFilterOptions, AvatarGroup, Rating, Skeleton, SpeedDial, SpeedDialAction, SpeedDialIcon, ToggleButton, ToggleButtonGroup, TreeItem, TreeView, useAutocomplete */
+/*! exports provided: Alert, AlertTitle, Autocomplete, AvatarGroup, Rating, Skeleton, SpeedDial, SpeedDialAction, SpeedDialIcon, ToggleButton, ToggleButtonGroup, TreeItem, TreeView, useAutocomplete, createFilterOptions */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67947,9 +68173,11 @@ var _js_RateABiz_data_json__WEBPACK_IMPORTED_MODULE_16___namespace = /*#__PURE__
 /* harmony import */ var _components_Home_Ada__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/Home/Ada */ "./components/Home/Ada.js");
 /* harmony import */ var _components_Home_ServiceList__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/Home/ServiceList */ "./components/Home/ServiceList.js");
 /* harmony import */ var _components_Home_RateABiz_WidgetMobile__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/Home/RateABiz/WidgetMobile */ "./components/Home/RateABiz/WidgetMobile.js");
+/* harmony import */ var _components_Home_Map__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/Home/Map */ "./components/Home/Map.js");
 
 var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
 
 
 
@@ -67983,24 +68211,12 @@ function Index(_ref) {
   var reviews = _ref.reviews,
       stats = _ref.stats;
   var classes = useStyles();
-  return __jsx(_components_Layout_Layout__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Container"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+  return __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
     container: true,
     spacing: 5,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68008,7 +68224,7 @@ function Index(_ref) {
     xs: 12,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -68016,42 +68232,42 @@ function Index(_ref) {
     className: classes.fullWidth,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 43
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
     smUp: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 44
     },
     __self: this
   }, __jsx(_components_shared_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
     src: "home/feature_img_mobile.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: this
   })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
     xsDown: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 47
     },
     __self: this
   }, __jsx(_components_shared_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
     src: "home/athletic_smiles.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 48
     },
     __self: this
   })))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
     smUp: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 54
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68061,27 +68277,27 @@ function Index(_ref) {
     md: 3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 55
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     className: classes.fullWidth,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 57
     },
     __self: this
   }, __jsx(_components_Home_Mobile_Features_Features__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 58
     },
     __self: this
   })))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
     xsDown: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 63
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68089,20 +68305,20 @@ function Index(_ref) {
     sm: 4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 66
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 68
     },
     __self: this
   }, __jsx(_components_Home_Feature__WEBPACK_IMPORTED_MODULE_13__["default"], {
     label: "Quality Care",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 69
     },
     __self: this
   }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68110,20 +68326,20 @@ function Index(_ref) {
     sm: 4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 72
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 74
     },
     __self: this
   }, __jsx(_components_Home_Feature__WEBPACK_IMPORTED_MODULE_13__["default"], {
     label: "Services",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 75
     },
     __self: this
   }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68131,27 +68347,27 @@ function Index(_ref) {
     sm: 4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 78
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 80
     },
     __self: this
   }, __jsx(_components_Home_Feature__WEBPACK_IMPORTED_MODULE_13__["default"], {
     label: "Timely",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 81
     },
     __self: this
   })))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
     smDown: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 85
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68160,20 +68376,20 @@ function Index(_ref) {
     lg: 7,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 86
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     height: 300,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 87
     },
     __self: this
   }, __jsx(_components_Home_ServiceList__WEBPACK_IMPORTED_MODULE_18__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 88
     },
     __self: this
   }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68182,27 +68398,27 @@ function Index(_ref) {
     lg: 5,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 92
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     height: 300,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 93
     },
     __self: this
   }, __jsx(_components_Home_Ada__WEBPACK_IMPORTED_MODULE_17__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 94
     },
     __self: this
   })))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
     xsDown: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 99
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68215,7 +68431,7 @@ function Index(_ref) {
     alignItems: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 100
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68223,14 +68439,14 @@ function Index(_ref) {
     xs: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 101
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     height: 500,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 102
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -68239,7 +68455,7 @@ function Index(_ref) {
     align: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 103
     },
     __self: this
   }, "TODO: Simile Gallery Before after"))))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68250,20 +68466,20 @@ function Index(_ref) {
     lg: 5,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 110
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
     smUp: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 112
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 113
     },
     __self: this
   }, __jsx(_components_Home_RateABiz_WidgetMobile__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -68271,20 +68487,20 @@ function Index(_ref) {
     reviews: reviews,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 114
     },
     __self: this
   }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
     xsDown: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 117
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 118
     },
     __self: this
   }, __jsx(_components_Home_RateABiz_Widget__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -68292,7 +68508,7 @@ function Index(_ref) {
     reviews: reviews,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 119
     },
     __self: this
   })))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68301,19 +68517,19 @@ function Index(_ref) {
     sm: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 125
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 127
     },
     __self: this
   }, __jsx(_components_Home_Mobile_About__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 128
     },
     __self: this
   }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68322,14 +68538,14 @@ function Index(_ref) {
     sm: 4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 131
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
     xsDown: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 133
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -68337,14 +68553,14 @@ function Index(_ref) {
     bgcolor: "success.dark",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 134
     },
     __self: this
   }, __jsx(_components_shared_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
     src: "home/team.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144
+      lineNumber: 135
     },
     __self: this
   })))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68353,28 +68569,28 @@ function Index(_ref) {
     md: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 139
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     height: 300,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 141
     },
     __self: this
   }, __jsx(_components_shared_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
     src: "home/building.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 142
     },
     __self: this
   }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Hidden"], {
     smDown: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 145
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68382,21 +68598,21 @@ function Index(_ref) {
     md: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 146
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
     height: 300,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 148
     },
     __self: this
   }, __jsx(_components_shared_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
     src: "home/man_smiling.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158
+      lineNumber: 149
     },
     __self: this
   })))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68406,7 +68622,7 @@ function Index(_ref) {
     justify: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 155
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68415,13 +68631,13 @@ function Index(_ref) {
     md: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166
+      lineNumber: 157
     },
     __self: this
   }, __jsx(_components_Home_Cta__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 158
     },
     __self: this
   }))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68431,7 +68647,7 @@ function Index(_ref) {
     justify: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171
+      lineNumber: 162
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -68440,7 +68656,7 @@ function Index(_ref) {
     md: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 172
+      lineNumber: 163
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -68448,17 +68664,16 @@ function Index(_ref) {
     bgcolor: "primary.main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 173
+      lineNumber: 164
     },
     __self: this
-  }, __jsx(_components_shared_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    src: "home/map.png",
+  }, __jsx(_components_Home_Map__WEBPACK_IMPORTED_MODULE_20__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174
+      lineNumber: 165
     },
     __self: this
-  })))))));
+  })))));
 } // Runs before anything else in the happens
 // Kind of a problem because the first page paint
 // happens after the page loads

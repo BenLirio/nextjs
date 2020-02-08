@@ -10,6 +10,7 @@ import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 // Import the theme that was created in src
 import theme from '../components/shared/theme'
+import Layout from '../components/Layout/Layout'
 
 // Customize the APP that next creates
 export default class MyApp extends App {
@@ -26,7 +27,6 @@ export default class MyApp extends App {
   render() {
     // App gets passed a Component and pageProps
     const { Component, pageProps } = this.props
-
     // It is itself a component as well
     // Contains site meta data and renders the passed in component
     // this is a wrapper component which wraps the page passed into a head and theme provider
@@ -43,7 +43,9 @@ export default class MyApp extends App {
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </ThemeProvider>
       </React.Fragment>
     )

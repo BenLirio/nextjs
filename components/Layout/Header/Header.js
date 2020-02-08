@@ -15,7 +15,7 @@ const Header = () => {
         <Hidden smDown>
           <Banner />
         </Hidden>
-        <Tabs value={/\/?[^\/]*/.exec(pathname)[0]} variant="fullWidth">
+        <Tabs value={/\/?[^\/]*/.exec(pathname)[0]}>
           <Tab href="/" value="/" component={Link} naked label="Home" />
           <Tab
             href="/new-patient/"
