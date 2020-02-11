@@ -119,12 +119,6 @@ export default function Index({ reviews, stats }) {
           </Grid>
         </Grid>
       </Hidden>
-      <Grid xs={12}>
-        <ReviewsWidget stats={stats} reviews={reviews} />
-      </Grid>
-      <Grid xs={12}>
-        <ReviewsWidgetCopy stats={stats} reviews={reviews} />
-      </Grid>
       <Grid item xs={12} sm={8} md={6} lg={5}>
         {/* Reviews */}
         <Hidden smUp>
