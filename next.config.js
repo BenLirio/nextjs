@@ -6,6 +6,7 @@ module.exports = {
       '/about': { page: '/about' },
       '/services': { page: '/services' },
       '/services/cosmetic': { page: '/services/cosmetic' },
+      '/services/preventative': { page: '/services/preventative' },
       '/new-patient': { page: '/new-patient' }
     }
 

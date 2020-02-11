@@ -13,6 +13,14 @@ const theme = createMuiTheme({
     background: {
       default: '#F5F5F5'
     }
+  },
+  shape: {
+    large: {
+      borderRadius: 12
+    },
+    medium: {
+      borderRadius: 12
+    }
   }
 })
 

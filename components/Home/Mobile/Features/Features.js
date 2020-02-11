@@ -8,7 +8,7 @@ const MobileFeatures = () => {
     <List>
       <FeatureListItem
         title="We Love our patients"
-        secondary="Quality and comfortable care"
+        secondary="We provide the dental care you deserve"
         icon="favorite"
         divider
       />
@@ -20,7 +20,7 @@ const MobileFeatures = () => {
       />
       <FeatureListItem
         title="Our Services"
-        secondary="Browse our services for more information"
+        secondary="Cosmetic, Preventative, and more"
         icon="assignment"
       />
     </List>

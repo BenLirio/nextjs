@@ -13,7 +13,10 @@ import {
 const Cta = () => {
   return (
     <Card>
-      <CardHeader title="learn more today" subheader="it will be worth it" />
+      <CardHeader
+        title="Get the care you deserve"
+        subheader="*Call to action*"
+      />
       <CardContent>
         <Typography>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo qui hic
@@ -21,7 +24,9 @@ const Cta = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button>Now</Button>
+        <Button color="secondary" variant="contained">
+          Call
+        </Button>
       </CardActions>
     </Card>
   )

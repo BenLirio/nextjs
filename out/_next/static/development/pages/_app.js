@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
-/***/ "./components/Layout/Footer.js":
-/*!*************************************!*\
-  !*** ./components/Layout/Footer.js ***!
-  \*************************************/
+/***/ "./components/Layout/Footer/Footer.js":
+/*!********************************************!*\
+  !*** ./components/Layout/Footer/Footer.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12,158 +12,262 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Footer.js";
+/* harmony import */ var _FooterContact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FooterContact */ "./components/Layout/Footer/FooterContact.js");
+/* harmony import */ var _FooterHours__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./FooterHours */ "./components/Layout/Footer/FooterHours.js");
+/* harmony import */ var _FooterSocialIcons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./FooterSocialIcons */ "./components/Layout/Footer/FooterSocialIcons.js");
+var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Footer/Footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
-var useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["makeStyles"])(function (theme) {
-  return {
-    root: {
-      paddingTop: '1rem',
-      background: theme.palette.primary.dark,
-      color: theme.palette.grey[50]
-    }
-  };
-});
 
-var DaySchedule = function DaySchedule(_ref) {
-  var day = _ref.day,
-      open = _ref.open,
-      close = _ref.close;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
-    item: true,
-    xs: 6,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
-    variant: "body1",
-    align: "right",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, day, ":")), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
-    item: true,
-    xs: 6,
+
+
+
+var Footer = function Footer() {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Divider"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
-    variant: "body1",
-    align: "left",
+  }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Container"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
-  }, open, "am - ", close, "pm")));
-};
-
-var Footer = function Footer() {
-  var classes = useStyles();
-  return __jsx("div", {
-    className: classes.root,
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Box"], {
+    bgcolor: "background.default",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 22
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
     container: true,
-    spacing: 1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 23
     },
     __self: this
-  }, __jsx(DaySchedule, {
-    day: "Monday",
-    open: "8",
-    close: "8",
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 12,
+    sm: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 24
     },
     __self: this
-  }), __jsx(DaySchedule, {
-    day: "Tuesday",
-    open: "8",
-    close: "8",
+  }, __jsx(_FooterContact__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 25
     },
     __self: this
-  }), __jsx(DaySchedule, {
-    day: "Wednesday",
-    open: "8",
-    close: "8",
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 12,
+    sm: 4,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, __jsx(_FooterHours__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
+    item: true,
+    xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, __jsx(_FooterSocialIcons__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }))))), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Divider"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
     },
     __self: this
-  }), __jsx(DaySchedule, {
-    day: "Thursday",
-    open: "8",
-    close: "8",
+  }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
+    variant: "subtitle2",
+    align: "center",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 37
     },
     __self: this
-  }), __jsx(DaySchedule, {
-    day: "Friday",
-    open: "8",
-    close: "8",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }), __jsx(DaySchedule, {
-    day: "Saturday",
-    open: "8",
-    close: "8",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }), __jsx(DaySchedule, {
-    day: "Sunday",
-    open: "8",
-    close: "8",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Grid"], {
-    item: true,
-    xs: 12,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["Typography"], {
-    align: "center",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, "\xA9Copyright - Ona Healthy Smile"))));
+  }, "\xA9Copyright - Ona Healthy Smile"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./components/Layout/Footer/FooterContact.js":
+/*!***************************************************!*\
+  !*** ./components/Layout/Footer/FooterContact.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Footer/FooterContact.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+var FooterContact = function FooterContact() {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "h6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "Contact"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "subtitle2",
+    color: "textSecondary",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "Phone: 616-281-8338"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "subtitle2",
+    color: "textSecondary",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "Email: info@onahealthysmile.com"), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "subtitle2",
+    color: "textSecondary",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "Address: PO Box 8228 Kentwood, MI 49518"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (FooterContact);
+
+/***/ }),
+
+/***/ "./components/Layout/Footer/FooterHours.js":
+/*!*************************************************!*\
+  !*** ./components/Layout/Footer/FooterHours.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _js_about_hours__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../js/about/hours */ "./js/about/hours.js");
+var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Footer/FooterHours.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+var FooterHours = function FooterHours() {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "h6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "Hours"), _js_about_hours__WEBPACK_IMPORTED_MODULE_2__["default"].map(function (day) {
+    return __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+      key: day.name,
+      variant: "subtitle2",
+      color: "textSecondary",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: this
+    }, day.name, ": ", day.hours);
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (FooterHours);
+
+/***/ }),
+
+/***/ "./components/Layout/Footer/FooterSocialIcons.js":
+/*!*******************************************************!*\
+  !*** ./components/Layout/Footer/FooterSocialIcons.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/icons/Facebook */ "./node_modules/@material-ui/icons/Facebook.js");
+/* harmony import */ var _material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Instagram */ "./node_modules/@material-ui/icons/Instagram.js");
+/* harmony import */ var _material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Footer/FooterSocialIcons.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+var FooterSocialIcons = function FooterSocialIcons() {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["IconButton"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx(_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["IconButton"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx(_material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (FooterSocialIcons);
 
 /***/ }),
 
@@ -187,8 +291,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+var useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(function (theme) {
+  return {
+    logo: {
+      background: "url('/home/favicon.ico')",
+      backgroundSize: 'contain',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      width: 100,
+      height: 100,
+      top: -20,
+      left: 0,
+      position: 'absolute'
+    }
+  };
+});
 
 var Banner = function Banner() {
+  var classes = useStyles();
+
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
       open = _useState[0],
       setOpen = _useState[1];
@@ -200,13 +321,13 @@ var Banner = function Banner() {
     open: open,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 32
     },
     __self: this
   }, __jsx(_Hours__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 33
     },
     __self: this
   })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
@@ -214,14 +335,15 @@ var Banner = function Banner() {
     bgcolor: "background.default",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 35
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
     container: true,
+    align: "right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 36
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -229,15 +351,14 @@ var Banner = function Banner() {
     xs: 1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 37
     },
     __self: this
-  }, __jsx(_shared_Image__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    src: "home/favicon.ico",
-    size: "contain",
+  }, __jsx("div", {
+    className: classes.logo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 38
     },
     __self: this
   })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -245,15 +366,15 @@ var Banner = function Banner() {
     xs: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 40
     },
     __self: this
   }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
     item: true,
-    xs: 2,
+    xs: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 41
     },
     __self: this
   }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
@@ -264,7 +385,7 @@ var Banner = function Banner() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 42
     },
     __self: this
   }, "Hours & location")))));
@@ -327,7 +448,6 @@ var Header = function Header() {
     __self: this
   })), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
     value: /\/?[^\/]*/.exec(pathname)[0],
-    variant: "fullWidth",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
@@ -494,10 +614,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header/Header */ "./components/Layout/Header/Header.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Layout/Footer.js");
+/* harmony import */ var _Footer_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer/Footer */ "./components/Layout/Footer/Footer.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/ben/Documents/sei/tmp/nextjs/components/Layout/Layout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -508,22 +631,38 @@ var Layout = function Layout(_ref) {
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Container"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, children), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }));
+  }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    container: true,
+    justify: "center",
+    spacing: 5,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, children)), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    paddingTop: 5,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, __jsx(_Footer_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -782,6 +921,40 @@ var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["create
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (theme);
+
+/***/ }),
+
+/***/ "./js/about/hours.js":
+/*!***************************!*\
+  !*** ./js/about/hours.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ([{
+  name: 'Monday',
+  hours: '8am - 8pm'
+}, {
+  name: 'Tuesday',
+  hours: '8am - 8pm'
+}, {
+  name: 'Wednesday',
+  hours: '8am - 8pm'
+}, {
+  name: 'Thursday',
+  hours: '8am - 8pm'
+}, {
+  name: 'Friday',
+  hours: '8am - 4pm'
+}, {
+  name: 'Saturday',
+  hours: '8am - 4pm'
+}, {
+  name: 'Sunday',
+  hours: 'closed'
+}]);
 
 /***/ }),
 
@@ -2364,6 +2537,52 @@ function _typeof(obj) {
 
   return _typeof(obj);
 }
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/extends.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/extends.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _extends() {
+  module.exports = _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+module.exports = _extends;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
 
 /***/ }),
 
@@ -37163,6 +37382,104 @@ var withWidth = function withWidth() {
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/icons/Facebook.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Facebook.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"
+}), 'Facebook');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/Instagram.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Instagram.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
+}), 'Instagram');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/utils/createSvgIcon.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/icons/utils/createSvgIcon.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = createSvgIcon;
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _SvgIcon = _interopRequireDefault(__webpack_require__(/*! @material-ui/core/SvgIcon */ "./node_modules/@material-ui/core/esm/SvgIcon/index.js"));
+
+function createSvgIcon(path, displayName) {
+  var Component = _react.default.memo(_react.default.forwardRef(function (props, ref) {
+    return _react.default.createElement(_SvgIcon.default, (0, _extends2.default)({
+      ref: ref
+    }, props), path);
+  }));
+
+  if (true) {
+    Component.displayName = "".concat(displayName, "Icon");
+  }
+
+  Component.muiName = _SvgIcon.default.muiName;
+  return Component;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/styles/esm/ServerStyleSheets/ServerStyleSheets.js":
 /*!*************************************************************************************!*\
   !*** ./node_modules/@material-ui/styles/esm/ServerStyleSheets/ServerStyleSheets.js ***!
@@ -59184,19 +59501,19 @@ function (_App) {
       return __jsx(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 35
         },
         __self: this
       }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_8___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 36
         },
         __self: this
       }, __jsx("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 37
         },
         __self: this
       }, "My page"), __jsx("meta", {
@@ -59204,32 +59521,32 @@ function (_App) {
         content: "minimum-scale=1, initial-scale=1, width=device-width",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 38
         },
         __self: this
       })), __jsx(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_9__["ThemeProvider"], {
         theme: _components_shared_theme__WEBPACK_IMPORTED_MODULE_11__["default"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 43
         },
         __self: this
       }, __jsx(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 45
         },
         __self: this
       }), __jsx(_components_Layout_Layout__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 46
         },
         __self: this
       }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 47
         },
         __self: this
       })))));

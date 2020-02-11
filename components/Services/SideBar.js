@@ -1,24 +1,24 @@
+import { List, ListItem, ListItemText, ListSubheader } from '@material-ui/core'
+import { useRouter } from 'next/router'
 import React from 'react'
-import { List, ListItem, ListSubheader, ListItemText } from '@material-ui/core'
-import { useRouter, Router } from 'next/router'
 
-const SideBar = ({ name, services }) => {
+const SideBar = ({ name, items }) => {
   const router = useRouter()
-  const { query, pathname } = router
-  const handleClick = service => {
-    router.push({ pathname, query: { service } })
+  const { query } = router
+  const handleClick = href => {
+    router.push(href)
   }
   return (
     <List subheader={<ListSubheader>{name}</ListSubheader>}>
-      {services.map(service => {
+      {items.map(({ name, href }) => {
         return (
           <ListItem
-            key={service}
+            key={name}
             button
-            selected={query.service === service}
-            onClick={() => handleClick(service)}
+            selected={query.service === name}
+            onClick={() => handleClick(href)}
           >
-            <ListItemText primary={service} />
+            <ListItemText primary={name} />
           </ListItem>
         )
       })}

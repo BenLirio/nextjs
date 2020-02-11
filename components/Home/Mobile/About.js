@@ -6,10 +6,11 @@ const MobileAbout = () => {
     <>
       <Typography variant="h2">About us</Typography>
       <Typography variant="body1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iusto
-        sed accusamus asperiores harum nisi voluptatum quidem, beatae
-        necessitatibus porro, dicta tempora. Doloribus iste in sequi perferendis
-        totam dolores quam!
+        We believe each person should experience dentistry as fun and as a treat
+        in a completely relaxed setting. We constantly strive to be outstanding
+        because we believe in making the world a better place for ourselves and
+        the people we serve. We go to work everyday so that we can give each
+        other and the people we care for something to smile about.
       </Typography>
     </>
   )

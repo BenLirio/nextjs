@@ -6,7 +6,8 @@ import {
   CardContent,
   CardActions,
   Button,
-  makeStyles
+  makeStyles,
+  Typography
 } from '@material-ui/core'
 import Link from '../shared/Link'
 
@@ -16,20 +17,17 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const Service = ({ name, children }) => {
+const Service = ({ name, href, description }) => {
   const classes = useStyles()
   return (
     <Card variant="outlined">
       <CardHeader title={name} />
       <CardMedia className={classes.media} image={`/services/${name}.png`} />
-      <CardContent>{children}</CardContent>
+      <CardContent>
+        <Typography color="textSecondary">{description}</Typography>
+      </CardContent>
       <CardActions>
-        <Button
-          component={Link}
-          naked
-          href={`/services/${name}/`}
-          color="primary"
-        >
+        <Button component={Link} naked href={href} color="primary">
           Learn More
         </Button>
       </CardActions>

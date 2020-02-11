@@ -1,16 +1,14 @@
-import React from 'react'
 import {
-  Paper,
   Card,
-  CardHeader,
   CardContent,
-  Typography,
-  List,
-  ListItem,
+  CardHeader,
+  Grid,
   ListItemText,
-  Grid
+  Typography
 } from '@material-ui/core'
+import React from 'react'
 import Link from '../shared/Link'
+import services from '../../js/services/services'
 
 const ServiceList = () => {
   return (
@@ -19,42 +17,20 @@ const ServiceList = () => {
       <CardContent>
         <Grid container spacing={3}>
           <Grid item xs={1}></Grid>
-          <Grid item xs>
-            <Typography variant="h6">Cosmetic</Typography>
-            <ListItemText>
-              <Link href="bonding">Bonding</Link>
-            </ListItemText>
-            <ListItemText>
-              <Link href="bonding">Bridges</Link>
-            </ListItemText>
-            <ListItemText>
-              <Link href="bonding">Dentures</Link>
-            </ListItemText>
-          </Grid>
-          <Grid item xs>
-            <Typography variant="h6">Preventative</Typography>
-            <ListItemText>
-              <Link href="bonding">Bonding</Link>
-            </ListItemText>
-            <ListItemText>
-              <Link href="bonding">Bridges</Link>
-            </ListItemText>
-            <ListItemText>
-              <Link href="bonding">Dentures</Link>
-            </ListItemText>
-          </Grid>
-          <Grid item xs>
-            <Typography variant="h6">Other</Typography>
-            <ListItemText>
-              <Link href="bonding">Bonding</Link>
-            </ListItemText>
-            <ListItemText>
-              <Link href="bonding">Bridges</Link>
-            </ListItemText>
-            <ListItemText>
-              <Link href="bonding">Dentures</Link>
-            </ListItemText>
-          </Grid>
+          {services.map(service => {
+            return (
+              <Grid item xs key={service.name}>
+                <Typography variant="h6">{service.name}</Typography>
+                {service.items.map(item => {
+                  return (
+                    <ListItemText key={item.name}>
+                      <Link href={item.href}>{item.name}</Link>
+                    </ListItemText>
+                  )
+                })}
+              </Grid>
+            )
+          })}
         </Grid>
       </CardContent>
     </Card>
