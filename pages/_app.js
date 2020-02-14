@@ -1,6 +1,6 @@
 import React from 'react'
 // Next has a special app component
-import App from 'next/app'
+import App, { Container } from 'next/app'
 // This is the same head that next has in _document
 // why is it here
 import Head from 'next/head'
@@ -11,6 +11,7 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 // Import the theme that was created in src
 import theme from '../components/shared/theme'
 import Layout from '../components/Layout/Layout'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 // Customize the APP that next creates
 export default class MyApp extends App {

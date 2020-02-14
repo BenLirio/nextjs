@@ -11,7 +11,8 @@ const theme = createMuiTheme({
       main: '#8FD468'
     },
     background: {
-      default: '#F5F5F5'
+      default: '#F9F9F9',
+      offset: '#EEEEEE'
     }
   },
   shape: {
@@ -19,6 +20,9 @@ const theme = createMuiTheme({
       borderRadius: 12
     },
     medium: {
+      borderRadius: 12
+    },
+    small: {
       borderRadius: 12
     }
   }

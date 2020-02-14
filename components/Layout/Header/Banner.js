@@ -32,20 +32,20 @@ const Banner = () => {
       <Dialog onClose={() => setOpen(false)} open={open}>
         <Hours />
       </Dialog>
-      <Box p={2} bgcolor="background.default">
+      <Box p={2} height={80} bgcolor="background.default">
         <Grid container align="right">
           <Grid item xs={1}>
             <div className={classes.logo}></div>
           </Grid>
           <Grid item xs></Grid>
           <Grid item xs={6}>
-            <Button
+            {/* <Button
               variant="contained"
               color="secondary"
               onClick={() => setOpen(true)}
             >
               Hours & location
-            </Button>
+            </Button> */}
           </Grid>
         </Grid>
       </Box>

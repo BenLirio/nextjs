@@ -1,32 +1,52 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core'
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    width: '100%',
-    height: theme.sizes.responsive[3],
-    [theme.breakpoints.up('md')]: {
-      height: theme.sizes.static[3]
-    },
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gridGap: '2vw'
-  },
-  feature: {
-    borderRadius: theme.shape.borderRadius,
-    background: theme.palette.background.paper,
-    boxShadow: theme.shadows[1]
-  }
-}))
+import { makeStyles, Hidden, Grid, Box } from '@material-ui/core'
+import Feature from './Feature'
+import MobileFeatures from './Mobile/Features/Features'
 
 const Features = () => {
-  const classes = useStyles()
   return (
-    <div className={classes.root}>
-      <div className={classes.feature}></div>
-      <div className={classes.feature}></div>
-      <div className={classes.feature}></div>
-    </div>
+    <>
+      <Hidden smUp>
+        <Grid item xs={12} sm={4} md={3}>
+          {/* Feature List Mobile */}
+          <Box>
+            <MobileFeatures />
+          </Box>
+        </Grid>
+      </Hidden>
+
+      <Hidden xsDown>
+        {/* FEATURES ROW */}
+
+        <Grid item sm={4}>
+          {/* Feature 1 */}
+          <Box>
+            <Feature
+              label="Quality Care"
+              description="We will provide you and your family with professional quality comfort and dental care"
+            />
+          </Box>
+        </Grid>
+        <Grid item sm={4}>
+          {/* Feature 2 */}
+          <Box>
+            <Feature
+              label="Services"
+              description="Cosmetic, Preventative, Root Canals and many more. We have something for everyone"
+            />
+          </Box>
+        </Grid>
+        <Grid item sm={4}>
+          {/* Feature 3 */}
+          <Box>
+            <Feature
+              label="Timely"
+              description="We know your time is valuable so at Healthy Smile, we offer convenient office hours"
+            />
+          </Box>
+        </Grid>
+      </Hidden>
+    </>
   )
 }
 

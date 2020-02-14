@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <Container>
-        <Grid container justify="center" spacing={5}>
+        <Grid container justify="center">
           {children}
         </Grid>
       </Container>
