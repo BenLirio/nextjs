@@ -16,12 +16,11 @@ const useStyles = makeStyles(theme => ({
 
 const Review = ({ review }) => {
   const classes = useStyles()
-  console.log(review)
   return (
     <Card variant="outlined" className={classes.root}>
       <CardContent>
         <Typography variant="h5">{review.title}</Typography>
-        <Rating value={review.rating} />
+        <Rating name={review.id.toString()} value={review.rating} />
         <Typography color="textSecondary">{review.text}</Typography>
         <Typography>- {review.name}</Typography>
       </CardContent>

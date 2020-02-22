@@ -4,16 +4,24 @@ import {
   CardHeader,
   Grid,
   ListItemText,
-  Typography
+  Typography,
+  makeStyles
 } from '@material-ui/core'
 import React from 'react'
 import Link from '../shared/Link'
 import services from '../../js/services/services'
 
+const useStyles = makeStyles(theme => ({
+  card: {
+    borderRadius: theme.shape.medium.borderRadius
+  }
+}))
+
 const ServiceList = () => {
+  const classes = useStyles()
   return (
-    <Card variant="outlined">
-      <CardHeader title="How we help you" />
+    <div className={classes.card}>
+      <CardHeader title="Services" />
       <CardContent>
         <Grid container spacing={3}>
           <Grid item xs={1}></Grid>
@@ -33,7 +41,7 @@ const ServiceList = () => {
           })}
         </Grid>
       </CardContent>
-    </Card>
+    </div>
   )
 }
 

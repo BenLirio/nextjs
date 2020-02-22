@@ -14,13 +14,16 @@ import Link from '../shared/Link'
 const useStyles = makeStyles(theme => ({
   media: {
     height: 140
+  },
+  service: {
+    borderRadius: theme.shape.medium.borderRadius
   }
 }))
 
 const Service = ({ name, href, description }) => {
   const classes = useStyles()
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" className={classes.service}>
       <CardHeader title={name} />
       <CardMedia className={classes.media} image={`/services/${name}.png`} />
       <CardContent>

@@ -16,28 +16,25 @@ import FooterSocialIcons from './FooterSocialIcons'
 
 const Footer = () => {
   return (
-    <>
-      <Divider />
+    <Box paddingTop={5} boxShadow={3}>
       <Container>
-        <Box bgcolor="background.default">
-          <Grid container>
-            <Grid item xs={12} sm={8}>
-              <FooterContact />
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <FooterHours />
-            </Grid>
-            <Grid item xs={12}>
-              <FooterSocialIcons />
-            </Grid>
+        <Grid container>
+          <Grid item xs={12} sm={8}>
+            <FooterContact />
           </Grid>
-        </Box>
+          <Grid item xs={12} sm={4}>
+            <FooterHours />
+          </Grid>
+          <Grid item xs={12}>
+            <FooterSocialIcons />
+          </Grid>
+        </Grid>
       </Container>
       <Divider />
       <Typography variant="subtitle2" align="center">
         ©Copyright - Ona Healthy Smile
       </Typography>
-    </>
+    </Box>
   )
 }
 

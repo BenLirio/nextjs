@@ -11,19 +11,24 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const Title = () => {
+const TitleMobile = () => {
   const classes = useStyles()
   return (
     <div variant="outlined" className={classes.title}>
       <CardHeader
         title={
-          <Typography variant="h1" style={{ color: '#EEE' }}>
-            Ona Healthy Smile
-          </Typography>
+          <>
+            <Typography variant="h2" style={{ color: '#EEE' }}>
+              Healthy
+            </Typography>
+            <Typography variant="h2" style={{ color: '#EEE' }}>
+              Smile
+            </Typography>
+          </>
         }
       />
     </div>
   )
 }
 
-export default Title
+export default TitleMobile

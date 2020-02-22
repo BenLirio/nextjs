@@ -10,9 +10,19 @@ import {
   CardContent
 } from '@material-ui/core'
 
+const useStyles = makeStyles(theme => ({
+  card: {
+    borderRadius: theme.shape.medium.borderRadius
+  },
+  button: {
+    borderRadius: theme.shape.small.borderRadius
+  }
+}))
+
 const Cta = () => {
+  const classes = useStyles()
   return (
-    <Card>
+    <Card className={classes.card} variant="outlined">
       <CardHeader
         title="Get the care you deserve"
         subheader="*Call to action*"
@@ -24,7 +34,11 @@ const Cta = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button color="secondary" variant="contained">
+        <Button
+          color="secondary"
+          variant="contained"
+          className={classes.button}
+        >
           Call
         </Button>
       </CardActions>

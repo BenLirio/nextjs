@@ -3,21 +3,30 @@ import { createMuiTheme } from '@material-ui/core/styles'
 // Create a theme instance.
 const theme = createMuiTheme({
   // Theme colors
+  typography: {
+    fontFamily: '"Muli", sans-serif',
+    h1: {
+      fontWeight: 500
+    },
+    body1: {
+      fontFamily: '"Open Sans", sans-serif'
+    }
+  },
   palette: {
     primary: {
       main: '#620064'
     },
     secondary: {
-      main: '#8FD468'
+      main: '#ff1744'
     },
     background: {
-      default: '#F9F9F9',
-      offset: '#EEEEEE'
+      default: '#FAFAFA',
+      offset: '#E3E5E3'
     }
   },
   shape: {
     large: {
-      borderRadius: 12
+      borderRadius: 24
     },
     medium: {
       borderRadius: 12

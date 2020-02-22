@@ -44,6 +44,7 @@ const useStyles = makeStyles(theme => ({
     transform: 'translateY(-50%)'
   },
   mapBorder: {
+    borderRadius: theme.shape.medium.borderRadius,
     width: '100%',
     height: '100%'
   }
@@ -61,7 +62,7 @@ const Map = () => {
   const classes = useStyles()
   return (
     <Card className={classes.mapBorder} variant="outlined">
-      <CardHeader title="Our Office" action={<LaunchButton />} />
+      <CardHeader title="Where to find us" action={<LaunchButton />} />
       <CardMedia>
         <div className={classes.root}>
           <div className={classes.marker}>
