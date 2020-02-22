@@ -14,6 +14,7 @@ import {
   CardActionArea
 } from '@material-ui/core'
 import ServiceList from '../ServiceList'
+import ServiceCard from './ServiceCard'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -30,25 +31,16 @@ const NewSmile = () => {
     <>
       <Typography variant="h3">How we help you</Typography>
       <Box margin={5} />
-      <Grid container spacing={5}>
-        <Grid item xs={12} sm={4}>
-          <Card className={classes.card} variant="outlined">
-            <CardHeader title="before & after" />
-            <CardMedia
-              image={`/home/${true ? 'before' : 'after'}.jpg`}
-              className={classes.media}
-            />
-            <CardMedia
-              image={`/home/${true ? 'after' : 'before'}.jpg`}
-              className={classes.media}
-            />
-          </Card>
+      <Grid item xs={12} container spacing={5}>
+        <Grid item xs={4}>
+          <ServiceCard title="Cosmetic" image="/home/before_after.jpg" />
         </Grid>
-        <Hidden xsDown>
-          <Grid item xs={12} sm={8}>
-            <ServiceList />
-          </Grid>
-        </Hidden>
+        <Grid item xs={4}>
+          <ServiceCard title="Preventative" image="/home/tooth_brush.jpg" />
+        </Grid>
+        <Grid item xs={4}>
+          <ServiceCard title="Other" image="/home/xray.jpeg" />
+        </Grid>
       </Grid>
     </>
   )
