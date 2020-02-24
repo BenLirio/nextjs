@@ -3,6 +3,7 @@ import React from 'react'
 import ServiceCta from '../../components/Services/ServiceCta'
 import ServiceFeature from '../../components/Services/ServiceFeature'
 import CommonService from '../../components/Services/CommonService'
+import BeforeAndAfter from '../../components/Services/BeforeAndAfter'
 
 const useStyles = makeStyles(theme => ({}))
 
@@ -15,9 +16,7 @@ const index = () => {
           <Typography variant="h2">Services</Typography>
         </Grid>
         <Grid item xs={7}>
-          <Box bgcolor="info.dark" height={300}>
-            Before & after
-          </Box>
+          <BeforeAndAfter />
         </Grid>
         <Grid item xs={5}>
           <CommonService />
