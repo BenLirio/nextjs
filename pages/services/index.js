@@ -1,6 +1,7 @@
 import { makeStyles, Typography, Grid, Box } from '@material-ui/core'
 import React from 'react'
 import ServiceCta from '../../components/Services/ServiceCta'
+import CommonService from '../../components/Services/CommonService'
 
 const useStyles = makeStyles(theme => ({}))
 
@@ -18,9 +19,7 @@ const index = () => {
           </Box>
         </Grid>
         <Grid item xs={5}>
-          <Box bgcolor="info.dark" height={300}>
-            Common Procedures
-          </Box>
+          <CommonService />
         </Grid>
         <Grid item xs={12}>
           <ServiceCta />
