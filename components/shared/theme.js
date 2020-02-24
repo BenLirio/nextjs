@@ -2,6 +2,12 @@ import { createMuiTheme } from '@material-ui/core/styles'
 
 // Create a theme instance.
 const theme = createMuiTheme({
+  props: {
+    MuiButton: {
+      variant: 'contained',
+      color: 'primary'
+    }
+  },
   // Theme colors
   typography: {
     fontFamily: '"Muli", sans-serif',

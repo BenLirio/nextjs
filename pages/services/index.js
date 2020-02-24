@@ -1,5 +1,6 @@
 import { makeStyles, Typography, Grid, Box } from '@material-ui/core'
 import React from 'react'
+import ServiceCta from '../../components/Services/ServiceCta'
 
 const useStyles = makeStyles(theme => ({}))
 
@@ -22,9 +23,7 @@ const index = () => {
           </Box>
         </Grid>
         <Grid item xs={12}>
-          <Box bgcolor="info.dark" height={100}>
-            Call to Action
-          </Box>
+          <ServiceCta />
         </Grid>
         <Grid item xs={4}>
           <Box bgcolor="info.dark" height={300}>
