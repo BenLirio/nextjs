@@ -6,6 +6,16 @@ const theme = createMuiTheme({
     MuiButton: {
       variant: 'contained',
       color: 'primary'
+    },
+    MuiCard: {
+      variant: 'outlined'
+    }
+  },
+  overrides: {
+    MuiCard: {
+      root: {
+        borderRadius: '12px'
+      }
     }
   },
   // Theme colors
