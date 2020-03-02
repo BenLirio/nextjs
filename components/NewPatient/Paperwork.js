@@ -1,14 +1,12 @@
-import React from 'react'
-import GetAppIcon from '@material-ui/icons/GetApp'
 import {
-  IconButton,
-  Typography,
   Button,
   Card,
-  makeStyles,
+  CardActions,
   CardContent,
-  CardActions
+  Typography
 } from '@material-ui/core'
+import GetAppIcon from '@material-ui/icons/GetApp'
+import React from 'react'
 
 const Paperwork = () => {
   return (

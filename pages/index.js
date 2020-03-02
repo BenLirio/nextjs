@@ -23,40 +23,15 @@ import Ada from '../components/Home/3-Ada/Ada'
 export default function Index({ reviews, stats }) {
   return (
     <>
-      <Box margin={3} />
-      <Grid item xs={12}>
-        <Typography variant="h2">Family & Cosmetic Dentistry</Typography>
-      </Grid>
-      <Box margin={3} />
-
-      <Grid item xs={12} container>
-        <NewSmile />
-      </Grid>
-
-      <Box margin={5} />
-      <Grid item xs={12} container>
-        <CtaRow />
-      </Grid>
-
-      <Box margin={5} />
+      <NewSmile />
+      <CtaRow />
       <ReviewsContextProvider reviews={reviews}>
         <StatsContextProvider stats={stats}>
           <Reviews stats={stats} reviews={reviews} />
         </StatsContextProvider>
       </ReviewsContextProvider>
-
-      <Box margin={5} />
-
-      <Grid item xs={12} container>
-        <Ada />
-      </Grid>
-      <Box margin={5} />
-
-      <Box margin={5} />
-      <Grid item xs={12} container>
-        <MapRow />
-      </Grid>
-      <Box margin={5} />
+      <Ada />
+      <MapRow />
     </>
   )
 }

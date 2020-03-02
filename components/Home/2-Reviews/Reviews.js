@@ -10,16 +10,14 @@ const Reviews = () => {
   return (
     <>
       <Heading />
-      <Grid item container xs={12} spacing={5}>
-        <Grid item xs={12} sm={4}>
-          <Review review={reviews[0]} />
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Review review={reviews[1]} />
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Review review={reviews[2]} />
-        </Grid>
+      <Grid item xs={4}>
+        <Review review={reviews[0]} />
+      </Grid>
+      <Grid item xs={4}>
+        <Review review={reviews[1]} />
+      </Grid>
+      <Grid item xs={4}>
+        <Review review={reviews[2]} />
       </Grid>
     </>
   )

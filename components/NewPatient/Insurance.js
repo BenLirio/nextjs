@@ -15,7 +15,7 @@ import InfoIcon from '@material-ui/icons/Info'
 
 const Insurance = () => {
   return (
-    <Grid container spacing={5}>
+    <>
       <Grid item xs={12}>
         <Typography variant="h4">Insurance</Typography>
       </Grid>
@@ -50,7 +50,7 @@ const Insurance = () => {
           </ListItem>
         </List>
       </Grid>
-    </Grid>
+    </>
   )
 }
 

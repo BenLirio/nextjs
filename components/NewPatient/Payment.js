@@ -14,7 +14,7 @@ import InfoIcon from '@material-ui/icons/Info'
 
 const Payment = () => {
   return (
-    <Grid container spacing={5}>
+    <>
       <Grid item xs={12}>
         <Typography variant="h4">Payment</Typography>
       </Grid>
@@ -46,7 +46,7 @@ const Payment = () => {
           </ListItem>
         </List>
       </Grid>
-    </Grid>
+    </>
   )
 }
 

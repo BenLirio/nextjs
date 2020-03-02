@@ -6,7 +6,8 @@ import {
   ListItemText,
   ListItemIcon,
   Divider,
-  Collapse
+  Collapse,
+  Grid
 } from '@material-ui/core'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
@@ -53,7 +54,7 @@ const Faq = () => {
     })
   }
   return (
-    <>
+    <Grid item xs={12}>
       <Typography variant="h3">FAQ</Typography>
       <List>
         {faq.map(({ question, answer }, id) => {
@@ -77,7 +78,7 @@ const Faq = () => {
           )
         })}
       </List>
-    </>
+    </Grid>
   )
 }
 

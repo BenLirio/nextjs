@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
-import { Container, Box, Grid, Fade, makeStyles } from '@material-ui/core'
+import {
+  Container,
+  Box,
+  Grid,
+  Fade,
+  makeStyles,
+  Typography
+} from '@material-ui/core'
 import { useRouter } from 'next/router'
 import FeatureImage from '../Home/1-FeatureImage/FeatureImage'
 
@@ -23,14 +30,40 @@ const useStyles = makeStyles(theme => ({
 const Layout = ({ children }) => {
   const classes = useStyles()
   const { pathname } = useRouter()
+  let title = ''
 
+  switch (/\/([a-zA-Z-]*)/.exec(pathname)[1]) {
+    case '': {
+      title = 'Family & Cosmetic Dentistry'
+      break
+    }
+    case 'new-patient': {
+      title = 'New Patient Information'
+      break
+    }
+    case 'services': {
+      title = 'Services'
+      break
+    }
+    case 'about': {
+      title = 'About'
+      break
+    }
+    default: {
+      title = 'unset title'
+      break
+    }
+  }
   return (
     <>
       <Header />
       {pathname === '/' ? <FeatureImage /> : null}
       <div className={classes.root}>
         <Container className={classes.container}>
-          <Grid container justify="center">
+          <Grid container justify="center" spacing={5}>
+            <Grid item xs={12}>
+              <Typography variant="h2">{title}</Typography>
+            </Grid>
             {children}
           </Grid>
         </Container>
