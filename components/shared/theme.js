@@ -16,6 +16,11 @@ const theme = createMuiTheme({
       root: {
         borderRadius: '12px'
       }
+    },
+    MuiButton: {
+      root: {
+        borderRadius: '12px'
+      }
     }
   },
   // Theme colors

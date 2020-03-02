@@ -38,7 +38,7 @@ const MapRow = () => {
         <Button color="secondary">CTA BUTTON</Button>
       </Grid>
       <Grid item xs={6}>
-        <Card variant="outlined" className={classes.map}>
+        <Card>
           <CardMedia>
             <GoogleMap />
           </CardMedia>

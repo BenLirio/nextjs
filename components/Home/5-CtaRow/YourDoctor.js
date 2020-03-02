@@ -27,13 +27,7 @@ const YourDoctor = () => {
       <Box margin={5} />
       <Grid container spacing={5}>
         <Grid item xs={3}>
-          <Card>
-            <CardHeader title="Dr. Suzzette Ona" />
-            <CardMedia image="/home/ona.jpg" style={{ height: '300px' }} />
-            <CardActions>
-              <Button variant="text">Learn More</Button>
-            </CardActions>
-          </Card>
+          <CardMedia image="/home/ona.jpg" style={{ height: '300px' }} />
         </Grid>
 
         <Grid item xs={6}>

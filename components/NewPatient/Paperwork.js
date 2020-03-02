@@ -10,20 +10,9 @@ import {
   CardActions
 } from '@material-ui/core'
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    borderRadius: theme.shape.medium.borderRadius
-  },
-
-  button: {
-    borderRadius: theme.shape.small.borderRadius
-  }
-}))
-
 const Paperwork = () => {
-  const classes = useStyles()
   return (
-    <Card variant="outlined" className={classes.root}>
+    <Card>
       <CardContent>
         <Typography variant="h4">New Patient Form</Typography>
         <Typography variant="subtitle1" color="textSecondary">
@@ -31,12 +20,7 @@ const Paperwork = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button
-          color="primary"
-          variant="contained"
-          endIcon={<GetAppIcon />}
-          className={classes.button}
-        >
+        <Button color="primary" variant="contained" endIcon={<GetAppIcon />}>
           Download
         </Button>
       </CardActions>
