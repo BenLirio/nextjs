@@ -10,7 +10,7 @@ import {
   Typography
 } from '@material-ui/core'
 import { useRouter } from 'next/router'
-import FeatureImage from '../Home/1-FeatureImage/FeatureImage'
+import FeatureImage from '../Home/FeatureImage/FeatureImage'
 
 const useStyles = makeStyles(theme => ({
   root: {
