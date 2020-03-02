@@ -27,14 +27,7 @@ const index = () => {
         <Box marginTop={5}></Box>
         <Typography variant="h2">New Patient Information</Typography>
       </Grid>
-      <Grid item xs={12} container spacing={5}>
-        <Grid item xs={6}>
-          <MeetTheTeam />
-        </Grid>
-        <Grid item xs={6}>
-          <MeetTheTeam />
-        </Grid>
-      </Grid>
+
       <Grid item xs={8} container spacing={5}>
         <Grid item xs={12}>
           <Insurance />
@@ -42,12 +35,12 @@ const index = () => {
         <Grid item xs={12}>
           <Payment />
         </Grid>
+      </Grid>
+      <Grid item xs={4}>
         <Grid item xs={12}>
           <Paperwork />
         </Grid>
-      </Grid>
-      <Grid item xs={4}>
-        {/* FAQ */}
+        <Box m={3} />
         <Faq />
       </Grid>
       <Grid item xs={12} container spacing={5}>
