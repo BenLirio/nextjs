@@ -29,6 +29,16 @@ export default function Index({ reviews, stats }) {
       </Grid>
       <Box margin={3} />
 
+      <Grid item xs={12} container>
+        <NewSmile />
+      </Grid>
+
+      <Box margin={5} />
+      <Grid item xs={12} container>
+        <CtaRow />
+      </Grid>
+
+      <Box margin={5} />
       <ReviewsContextProvider reviews={reviews}>
         <StatsContextProvider stats={stats}>
           <Reviews stats={stats} reviews={reviews} />
@@ -42,15 +52,6 @@ export default function Index({ reviews, stats }) {
       </Grid>
       <Box margin={5} />
 
-      <Grid item xs={12} container>
-        <NewSmile />
-      </Grid>
-      <Hidden xsDown>
-        <Box margin={5} />
-        <Grid item xs={12} container>
-          <CtaRow />
-        </Grid>
-      </Hidden>
       <Box margin={5} />
       <Grid item xs={12} container>
         <MapRow />

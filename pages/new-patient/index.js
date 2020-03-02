@@ -5,7 +5,8 @@ import {
   Card,
   CardHeader,
   CardActions,
-  Button
+  Button,
+  CardMedia
 } from '@material-ui/core'
 import { useRouter } from 'next/router'
 import React from 'react'
@@ -14,6 +15,9 @@ import Faq from '../../components/NewPatient/Faq'
 import Insurance from '../../components/NewPatient/Insurance'
 import Paperwork from '../../components/NewPatient/Paperwork'
 import Payment from '../../components/NewPatient/Payment'
+import GoogleMap from '../../components/Home/6-MapRow/GoogleMap'
+import MapRow from '../../components/Home/6-MapRow/MapRow'
+import MeetTheTeam from '../../components/NewPatient/MeetTheTeam'
 
 const index = () => {
   const router = useRouter()
@@ -21,24 +25,21 @@ const index = () => {
     <Grid item container xs={12} spacing={5} justify="center">
       <Grid item xs={12}>
         <Box marginTop={5}></Box>
-        <Typography variant="h2">All the info you need</Typography>
+        <Typography variant="h2">New Patient Information</Typography>
+      </Grid>
+      <Grid item xs={12} container spacing={5}>
+        <Grid item xs={6}>
+          <MeetTheTeam />
+        </Grid>
+        <Grid item xs={6}>
+          <MeetTheTeam />
+        </Grid>
       </Grid>
       <Grid item xs={8} container spacing={5}>
         <Grid item xs={12}>
-          <Card variant="outlined">
-            <CardHeader title="But first would you like to..." />
-            <CardActions>
-              <Button color="primary">Meet the team</Button>
-              <Button color="primary">View our Services</Button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Typography variant="h3">Insurance & Payment</Typography>
-        {/* INFO */}
-        <Grid item xs={6}>
           <Insurance />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12}>
           <Payment />
         </Grid>
         <Grid item xs={12}>
@@ -49,7 +50,9 @@ const index = () => {
         {/* FAQ */}
         <Faq />
       </Grid>
-
+      <Grid item xs={12} container spacing={5}>
+        <MapRow />
+      </Grid>
       <Grid item xs={12}>
         <Box marginTop={5} />
       </Grid>

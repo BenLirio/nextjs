@@ -20,7 +20,7 @@ const YourDoctor = () => {
   const classes = useStyles()
   return (
     <Hidden xsDown>
-      <Typography variant="h3">Your doctor</Typography>
+      <Typography variant="h3">Who the doctor is</Typography>
       <Box margin={5} />
       <Grid container spacing={5}>
         <Grid item xs={3}>
@@ -40,10 +40,12 @@ const YourDoctor = () => {
           >
             <Typography variant="h4">Dr. Suzzette Lirio Ona</Typography>
             <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
-              dicta similique nam aut minima deleniti, aliquam sunt dolor cum
-              quis iste ipsam repudiandae debitis totam reiciendis blanditiis
-              nemo porro a!
+              DR. BIO(40-50w) Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Tenetur, rerum? Veritatis minus qui odit
+              distinctio, reiciendis incidunt quaerat magnam? Beatae labore,
+              omnis temporibus atque similique modi in quos porro repudiandae
+              quia quis incidunt eius veniam neque hic odio doloribus!
+              Doloremque.
             </Typography>
             <Box height={100}>
               <div style={{ width: '100%', height: '100%', display: 'flex' }}>
