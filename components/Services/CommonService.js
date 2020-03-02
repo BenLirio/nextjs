@@ -7,16 +7,16 @@ const CommonService = () => {
       <Typography variant="h4">Common Service</Typography>
       <List>
         <ListItem>
-          <ListItemText>Service 1</ListItemText>
+          <ListItemText>Invisalign</ListItemText>
         </ListItem>
         <ListItem>
-          <ListItemText>Service 2</ListItemText>
+          <ListItemText>Crowns</ListItemText>
         </ListItem>
         <ListItem>
-          <ListItemText>Service 3</ListItemText>
+          <ListItemText>Implants</ListItemText>
         </ListItem>
         <ListItem>
-          <ListItemText>Service 4</ListItemText>
+          <ListItemText>Whitening</ListItemText>
         </ListItem>
       </List>
     </>

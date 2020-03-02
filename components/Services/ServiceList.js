@@ -1,29 +1,48 @@
 import React from 'react'
 import { Typography, List, ListItem, ListItemText } from '@material-ui/core'
 
+const services = [
+  'Implants',
+  'Extractions',
+  'Root Canal Therapy',
+  'Emergency',
+  'X-rays',
+  'Schick Sensor',
+  '3D Panorex',
+  'Cosmetic',
+  'Bonding',
+  'Bridges',
+  'Dentures',
+  'Crowns',
+  'Implants',
+  'Invisalign',
+  'Snap-On-Smile',
+  'Veneers',
+  'Whitening',
+  'Preventative',
+  'Nigh Gaurd',
+  'Sleep Apnea/Snore Gaurd',
+  'Cleaning Exams',
+  'Home Care',
+  'Dental X-Rays',
+  'Sealants',
+  'Sports Mouth Guards',
+  'Children’s Dentistry',
+  'Potential Dangers'
+]
+
 const ServiceList = () => {
   return (
     <>
       <Typography variant="h4">All services</Typography>
       <List>
-        <ListItem button>
-          <ListItemText>Service 1</ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>Service 2</ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>Service 3</ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>Service 4</ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>Service 5</ListItemText>
-        </ListItem>
-        <ListItem button>
-          <ListItemText>Service 6</ListItemText>
-        </ListItem>
+        {services.map(service => {
+          return (
+            <ListItem button>
+              <ListItemText>{service}</ListItemText>
+            </ListItem>
+          )
+        })}
       </List>
     </>
   )
