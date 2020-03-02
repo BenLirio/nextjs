@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
   image: ({ src, size }) => ({
-    background: `url('/${src}')`,
+    background: `url('${src}')`,
     width: '100%',
     height: '100%',
     backgroundPosition: 'center',

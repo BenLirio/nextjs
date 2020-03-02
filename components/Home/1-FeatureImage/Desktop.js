@@ -1,21 +1,6 @@
-import React from 'react'
-import {
-  makeStyles,
-  Typography,
-  Grid,
-  Box,
-  Button,
-  Container,
-  Paper,
-  Card,
-  CardContent,
-  CardHeader,
-  Hidden
-} from '@material-ui/core'
+import { Grid, makeStyles } from '@material-ui/core'
+import React, { useState, useEffect } from 'react'
 import Image from '../../shared/Image'
-import Title from './Title'
-import Guide from './Guide'
-import TitleMobile from './TitleMobile'
 
 const useStyles = makeStyles(theme => ({
   image: {
@@ -32,20 +17,16 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
+const NUM_IMAGES = 5
+
 const Desktop = () => {
   const classes = useStyles()
+
   return (
     <>
       <Grid item xs={12}>
         <div className={classes.image} variant="outlined">
-          <Container>
-            <Hidden smDown>
-              <Title />
-            </Hidden>
-            <Hidden mdUp>
-              <TitleMobile />
-            </Hidden>
-          </Container>
+          <Image src="/home/feature/feature_2.jpeg"></Image>
         </div>
       </Grid>
     </>

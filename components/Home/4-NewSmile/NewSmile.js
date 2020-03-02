@@ -33,10 +33,16 @@ const NewSmile = () => {
       <Box margin={5} />
       <Grid item xs={12} container spacing={5}>
         <Grid item xs={4}>
-          <ServiceCard title="Cosmetic" image="/home/before_after.jpg" />
+          <ServiceCard
+            title="Cosmetic"
+            image="/home/cosmetic/cosmetic_2.jpeg"
+          />
         </Grid>
         <Grid item xs={4}>
-          <ServiceCard title="Preventative" image="/home/tooth_brush.jpg" />
+          <ServiceCard
+            title="Preventative"
+            image="/home/preventative/preventative_3.jpeg"
+          />
         </Grid>
         <Grid item xs={4}>
           <ServiceCard title="Other" image="/home/xray.jpeg" />
