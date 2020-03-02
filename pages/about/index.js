@@ -13,25 +13,25 @@ import AboutTeam from '../../components/About/AboutTeam'
 const about = () => {
   return (
     <>
-      <Grid item xs={12} container spacing={5}>
-        <Grid item xs={12}>
-          <Box marginTop={5} />
-          <Typography variant="h2">About</Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Box height={400}>
-            <Image src="dummy/900x400.png" />
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <MissionStatement />
-        </Grid>
-        <Grid item xs={12}>
-          <AboutDoctors />
-        </Grid>
-        <Grid item xs={12}>
-          <AboutTeam />
-        </Grid>
+      <Grid item xs={4}>
+        <Box height={400} bgcolor="info.dark" />
+      </Grid>
+      <Grid item xs={8}>
+        <Box height={400}>
+          <Image src="/dummy/900x400.png" />
+        </Box>
+      </Grid>
+      <Grid item xs={8}>
+        <MissionStatement />
+      </Grid>
+      <Grid item xs={4}>
+        <Box height={400} bgcolor="info.dark"></Box>
+      </Grid>
+      <Grid item xs={12}>
+        <AboutDoctors />
+      </Grid>
+      <Grid item xs={12}>
+        <AboutTeam />
       </Grid>
     </>
   )
