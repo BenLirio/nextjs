@@ -1,5 +1,14 @@
 import React from 'react'
-import { Typography, List, ListItem, ListItemText } from '@material-ui/core'
+import {
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+  Card,
+  CardHeader,
+  Grid
+} from '@material-ui/core'
+import { FixedSizeList } from 'react-window'
 
 const services = [
   'Implants',
@@ -29,21 +38,29 @@ const services = [
   'Sports Mouth Guards',
   'Children’s Dentistry',
   'Potential Dangers'
-]
+].sort()
 
 const ServiceList = () => {
   return (
     <>
-      <Typography variant="h4">All services</Typography>
-      <List>
-        {services.map(service => {
-          return (
-            <ListItem button>
-              <ListItemText>{service}</ListItemText>
-            </ListItem>
-          )
-        })}
-      </List>
+      <Card style={{ borderRadius: '0' }}>
+        <CardHeader title="All services" />
+        <FixedSizeList
+          height={400}
+          width={400}
+          itemSize={46}
+          itemCount={services.length}
+        >
+          {({ style, index }) => {
+            const service = services[index]
+            return (
+              <ListItem key={index} style={style} button>
+                <ListItemText>{service}</ListItemText>
+              </ListItem>
+            )
+          }}
+        </FixedSizeList>
+      </Card>
     </>
   )
 }
