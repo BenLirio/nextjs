@@ -6,7 +6,10 @@ import {
   makeStyles,
   Hidden,
   Card,
-  CardMedia
+  CardMedia,
+  CardHeader,
+  CardActions,
+  Button
 } from '@material-ui/core'
 import Image from '../../shared/Image'
 
@@ -24,8 +27,12 @@ const YourDoctor = () => {
       <Box margin={5} />
       <Grid container spacing={5}>
         <Grid item xs={3}>
-          <Card variant="outlined" className={classes.image}>
+          <Card>
+            <CardHeader title="Dr. Suzzette Ona" />
             <CardMedia image="/home/ona.jpg" style={{ height: '300px' }} />
+            <CardActions>
+              <Button variant="text">Learn More</Button>
+            </CardActions>
           </Card>
         </Grid>
 

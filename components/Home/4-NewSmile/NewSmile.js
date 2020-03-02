@@ -1,20 +1,15 @@
-import React, { useState } from 'react'
 import {
-  Typography,
-  Grid,
-  Card,
-  CardMedia,
-  makeStyles,
-  CardHeader,
-  CardContent,
   Box,
-  Hidden,
-  Switch,
-  Fade,
-  CardActionArea
+  Button,
+  Card,
+  CardActions,
+  CardHeader,
+  CardMedia,
+  Grid,
+  makeStyles,
+  Typography
 } from '@material-ui/core'
-import ServiceList from '../ServiceList'
-import ServiceCard from './ServiceCard'
+import React from 'react'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -33,19 +28,37 @@ const NewSmile = () => {
       <Box margin={5} />
       <Grid item xs={12} container spacing={5}>
         <Grid item xs={4}>
-          <ServiceCard
-            title="Cosmetic"
-            image="/home/cosmetic/cosmetic_2.jpeg"
-          />
+          <Card>
+            <CardHeader title="Cosmetic" />
+            <CardMedia
+              image={'/home/cosmetic/cosmetic_2.jpeg'}
+              style={{ height: '160px' }}
+            />
+            <CardActions>
+              <Button variant="text">Learn more</Button>
+            </CardActions>
+          </Card>
         </Grid>
         <Grid item xs={4}>
-          <ServiceCard
-            title="Preventative"
-            image="/home/preventative/preventative_3.jpeg"
-          />
+          <Card>
+            <CardHeader title="Preventative" />
+            <CardMedia
+              image={'/home/preventative/preventative_3.jpeg'}
+              style={{ height: '160px' }}
+            />
+            <CardActions>
+              <Button variant="text">Learn more</Button>
+            </CardActions>
+          </Card>
         </Grid>
         <Grid item xs={4}>
-          <ServiceCard title="Other" image="/home/xray.jpeg" />
+          <Card>
+            <CardHeader title="Preventative" />
+            <CardMedia image={'/home/xray.jpeg'} style={{ height: '160px' }} />
+            <CardActions>
+              <Button variant="text">Learn more</Button>
+            </CardActions>
+          </Card>
         </Grid>
       </Grid>
     </>
