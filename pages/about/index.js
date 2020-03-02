@@ -7,6 +7,8 @@ import { Grid, Box, Typography, Fade, Grow } from '@material-ui/core'
 import Image from '../../components/shared/Image'
 import AboutCard from '../../components/About/AboutCard'
 import MissionStatement from '../../components/About/MissionStatement'
+import AboutDoctors from '../../components/About/AboutDoctors'
+import AboutTeam from '../../components/About/AboutTeam'
 
 const about = () => {
   return (
@@ -24,12 +26,11 @@ const about = () => {
         <Grid item xs={12}>
           <MissionStatement />
         </Grid>
-        <Grid item xs={6}>
-          <AboutCard name="doctors" />
+        <Grid item xs={12}>
+          <AboutDoctors />
         </Grid>
-        <Grid item xs={6}>
-          <AboutCard name="team" />
-          <Box marginTop={5} />
+        <Grid item xs={12}>
+          <AboutTeam />
         </Grid>
       </Grid>
     </>
