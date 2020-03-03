@@ -51,32 +51,31 @@ const ServiceList = ({ myRef }) => {
     executeScroll()
   }
   return (
-    <>
-      <Card ref={myRef} style={{ borderRadius: '0' }}>
-        <CardHeader title="All services" />
-        <FixedSizeList
-          height={400}
-          width={400}
-          itemSize={46}
-          itemCount={services.length}
-        >
-          {({ style, index }) => {
-            const service = services[index]
-            return (
-              <ListItem
-                key={index}
-                style={style}
-                button
-                onClick={() => servicePressed(service)}
-                selected={query.service === service}
-              >
-                <ListItemText>{service}</ListItemText>
-              </ListItem>
-            )
-          }}
-        </FixedSizeList>
-      </Card>
-    </>
+    <div
+      style={{ borderBottom: '1px solid #888', borderTop: '1px solid #888' }}
+    >
+      <FixedSizeList
+        height={400}
+        width={400}
+        itemSize={46}
+        itemCount={services.length}
+      >
+        {({ style, index }) => {
+          const service = services[index]
+          return (
+            <ListItem
+              key={index}
+              style={style}
+              button
+              onClick={() => servicePressed(service)}
+              selected={query.service === service}
+            >
+              <ListItemText>{service}</ListItemText>
+            </ListItem>
+          )
+        }}
+      </FixedSizeList>
+    </div>
   )
 }
 

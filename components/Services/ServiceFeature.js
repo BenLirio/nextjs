@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Card,
   CardHeader,
@@ -6,7 +6,8 @@ import {
   Button,
   CardContent,
   Typography,
-  CardMedia
+  CardMedia,
+  Collapse
 } from '@material-ui/core'
 
 const ServiceFeature = ({ age }) => {
@@ -36,6 +37,10 @@ const ServiceFeature = ({ age }) => {
       break
     }
   }
+  const [more, setMore] = useState(false)
+  const toggleMore = () => {
+    setMore(!more)
+  }
   return (
     <Card>
       <CardHeader title={title} />
@@ -44,8 +49,19 @@ const ServiceFeature = ({ age }) => {
         <Typography variant="body1">{description}</Typography>
       </CardContent>
       <CardActions>
-        <Button variant="text">Learn more</Button>
+        <Button onClick={toggleMore} variant="text">
+          {!more ? 'Learn more' : 'less'}
+        </Button>
       </CardActions>
+      <Collapse in={more}>
+        <CardContent>
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repellendus, mollitia quae est quidem sit molestiae? Consectetur
+            dolores perspiciatis error corporis.
+          </Typography>
+        </CardContent>
+      </Collapse>
     </Card>
   )
 }

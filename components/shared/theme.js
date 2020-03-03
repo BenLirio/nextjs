@@ -10,6 +10,11 @@ const theme = createMuiTheme({
     MuiCard: {}
   },
   overrides: {
+    MuiListItem: {
+      root: {
+        borderRadius: '12px'
+      }
+    },
     MuiCard: {
       root: {
         borderRadius: '12px'
