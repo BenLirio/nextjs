@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {
   Typography,
   List,
@@ -41,12 +41,20 @@ const services = [
   'Potential Dangers'
 ].sort()
 
+const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop - 100)
+
 const ServiceList = () => {
   const router = useRouter()
   const { query, pathname } = router
+  const myRef = useRef(null)
+  const executeScroll = () => scrollToRef(myRef)
+  const servicePressed = service => {
+    router.push({ pathname, query: { service } })
+    executeScroll()
+  }
   return (
     <>
-      <Card style={{ borderRadius: '0' }}>
+      <Card ref={myRef} style={{ borderRadius: '0' }}>
         <CardHeader title="All services" />
         <FixedSizeList
           height={400}
@@ -61,7 +69,7 @@ const ServiceList = () => {
                 key={index}
                 style={style}
                 button
-                onClick={() => router.push({ pathname, query: { service } })}
+                onClick={() => servicePressed(service)}
                 selected={query.service === service}
               >
                 <ListItemText>{service}</ListItemText>
