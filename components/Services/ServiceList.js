@@ -9,6 +9,7 @@ import {
   Grid
 } from '@material-ui/core'
 import { FixedSizeList } from 'react-window'
+import { useRouter } from 'next/router'
 
 const services = [
   'Implants',
@@ -41,6 +42,8 @@ const services = [
 ].sort()
 
 const ServiceList = () => {
+  const router = useRouter()
+  const { query, pathname } = router
   return (
     <>
       <Card style={{ borderRadius: '0' }}>
@@ -54,7 +57,13 @@ const ServiceList = () => {
           {({ style, index }) => {
             const service = services[index]
             return (
-              <ListItem key={index} style={style} button>
+              <ListItem
+                key={index}
+                style={style}
+                button
+                onClick={() => router.push({ pathname, query: { service } })}
+                selected={query.service === service}
+              >
                 <ListItemText>{service}</ListItemText>
               </ListItem>
             )
