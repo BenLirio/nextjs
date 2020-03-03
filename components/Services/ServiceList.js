@@ -12,7 +12,6 @@ import { FixedSizeList } from 'react-window'
 import { useRouter } from 'next/router'
 
 const services = [
-  'Implants',
   'Extractions',
   'Root Canal Therapy',
   'Emergency',
