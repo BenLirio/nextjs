@@ -1,6 +1,6 @@
 import { Grid } from '@material-ui/core'
 import React from 'react'
-import MapRow from '../../components/Home/6-MapRow/MapRow'
+import MapRow from '../../components/Home/MapRow/MapRow'
 import Faq from '../../components/NewPatient/Faq'
 import Insurance from '../../components/NewPatient/Insurance'
 import Payment from '../../components/NewPatient/Payment'
