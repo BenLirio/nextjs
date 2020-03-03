@@ -7,9 +7,7 @@ const theme = createMuiTheme({
       variant: 'contained',
       color: 'primary'
     },
-    MuiCard: {
-      variant: 'outlined'
-    }
+    MuiCard: {}
   },
   overrides: {
     MuiCard: {
