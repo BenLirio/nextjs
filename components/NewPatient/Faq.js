@@ -14,32 +14,32 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
 const faq = [
   {
-    question: 'Question 1',
+    question: 'Am I able to get a discount?',
     answer:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, deserunt?'
   },
   {
-    question: 'Question 2',
+    question: 'How do I find my coverage?',
     answer:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, deserunt?'
   },
   {
-    question: 'Question 3',
+    question: 'How do I transfer dentist?',
     answer:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, deserunt?'
   },
   {
-    question: 'Question 4',
+    question: 'What is the most reasonable plan?',
     answer:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, deserunt?'
   },
   {
-    question: 'Question 5',
+    question: 'What paper work is needed?',
     answer:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, deserunt?'
   },
   {
-    question: 'Question 6',
+    question: 'Can I put payment on credit?',
     answer:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, deserunt?'
   }

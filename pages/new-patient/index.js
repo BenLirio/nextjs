@@ -8,11 +8,11 @@ import Payment from '../../components/NewPatient/Payment'
 const index = () => {
   return (
     <>
-      <Grid item xs={8} container>
+      <Grid item xs={7} container>
         <Insurance />
         <Payment />
       </Grid>
-      <Grid item xs={4} container spacing={5}>
+      <Grid item xs={5}>
         <Faq />
       </Grid>
       <MapRow />
