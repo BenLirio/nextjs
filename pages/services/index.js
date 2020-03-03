@@ -21,13 +21,13 @@ const index = () => {
         <ServiceCta />
       </Grid>
       <Grid item xs={4}>
-        <ServiceFeature />
+        <ServiceFeature age="young" />
       </Grid>
       <Grid item xs={4}>
-        <ServiceFeature />
+        <ServiceFeature age="mid" />
       </Grid>
       <Grid item xs={4}>
-        <ServiceFeature />
+        <ServiceFeature age="old" />
       </Grid>
       <Grid item xs={4}>
         <ServiceList myRef={myRef} />
