@@ -10,6 +10,7 @@ import {
   Typography
 } from '@material-ui/core'
 import React from 'react'
+import { useRouter } from 'next/router'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -22,6 +23,7 @@ const useStyles = makeStyles(theme => ({
 
 const NewSmile = () => {
   const classes = useStyles()
+  const router = useRouter()
   return (
     <>
       <Grid item xs={12}>
@@ -36,7 +38,9 @@ const NewSmile = () => {
             style={{ height: '160px' }}
           />
           <CardActions>
-            <Button variant="text">Learn more</Button>
+            <Button onClick={() => router.push('/services')} variant="text">
+              View services
+            </Button>
           </CardActions>
         </Card>
       </Grid>
@@ -48,16 +52,20 @@ const NewSmile = () => {
             style={{ height: '160px' }}
           />
           <CardActions>
-            <Button variant="text">Learn more</Button>
+            <Button onClick={() => router.push('/services')} variant="text">
+              view services
+            </Button>
           </CardActions>
         </Card>
       </Grid>
       <Grid item xs={4}>
         <Card>
-          <CardHeader title="Preventative" />
+          <CardHeader title="Other" />
           <CardMedia image={'/home/xray.jpeg'} style={{ height: '160px' }} />
           <CardActions>
-            <Button variant="text">Learn more</Button>
+            <Button onClick={() => router.push('/services')} variant="text">
+              view Services
+            </Button>
           </CardActions>
         </Card>
       </Grid>
