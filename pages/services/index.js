@@ -5,6 +5,7 @@ import ServiceFeature from '../../components/Services/ServiceFeature'
 import CommonService from '../../components/Services/CommonService'
 import BeforeAndAfter from '../../components/Services/BeforeAndAfter'
 import ServiceList from '../../components/Services/ServiceList'
+import ServiceDescription from '../../components/Services/ServiceDescription'
 
 const index = () => {
   const myRef = useRef(null)
@@ -32,7 +33,7 @@ const index = () => {
         <ServiceList myRef={myRef} />
       </Grid>
       <Grid item xs={8}>
-        <Box bgcolor="info.dark" height={300}></Box>
+        <ServiceDescription />
       </Grid>
     </>
   )
