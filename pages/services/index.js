@@ -6,19 +6,17 @@ import CommonService from '../../components/Services/CommonService'
 import BeforeAndAfter from '../../components/Services/BeforeAndAfter'
 import ServiceList from '../../components/Services/ServiceList'
 import ServiceDescription from '../../components/Services/ServiceDescription'
+import ServiceImage from '../../components/Services/ServiceImage'
 
 const index = () => {
   const myRef = useRef(null)
   return (
     <>
       <Grid item xs={7}>
-        <BeforeAndAfter />
+        <ServiceImage />
       </Grid>
       <Grid item xs={5}>
         <CommonService myRef={myRef} />
-      </Grid>
-      <Grid item xs={12}>
-        <ServiceCta />
       </Grid>
       <Grid item xs={4}>
         <ServiceFeature age="young" />
@@ -28,6 +26,9 @@ const index = () => {
       </Grid>
       <Grid item xs={4}>
         <ServiceFeature age="old" />
+      </Grid>
+      <Grid item xs={12}>
+        <ServiceCta />
       </Grid>
       <Grid item xs={4}>
         <ServiceList myRef={myRef} />
