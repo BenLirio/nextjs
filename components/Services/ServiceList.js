@@ -43,10 +43,9 @@ const services = [
 
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop - 100)
 
-const ServiceList = () => {
+const ServiceList = ({ myRef }) => {
   const router = useRouter()
   const { query, pathname } = router
-  const myRef = useRef(null)
   const executeScroll = () => scrollToRef(myRef)
   const servicePressed = service => {
     router.push({ pathname, query: { service } })
