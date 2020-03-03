@@ -24,11 +24,11 @@ const YourDoctor = () => {
   return (
     <>
       <Grid item xs={12}>
-        <Typography variant="h3">Who the doctor is</Typography>
+        <Typography variant="h3">Who will help you</Typography>
       </Grid>
 
       <Grid item xs={3}>
-        <CardMedia image="/home/ona.jpg" style={{ height: '300px' }} />
+        <CardMedia image="/home/ona.jpg" style={{ height: '350px' }} />
       </Grid>
 
       <Grid item xs={6}>
@@ -42,11 +42,14 @@ const YourDoctor = () => {
         >
           <Typography variant="h4">Dr. Suzzette Lirio Ona</Typography>
           <Typography variant="body1">
-            DR. BIO(40-50w) Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Tenetur, rerum? Veritatis minus qui odit distinctio,
-            reiciendis incidunt quaerat magnam? Beatae labore, omnis temporibus
-            atque similique modi in quos porro repudiandae quia quis incidunt
-            eius veniam neque hic odio doloribus! Doloremque.
+            Dr. Suzzette Lirio Ona, D.M.D received a B.A. in Biochemistry from
+            Mount Holyoke College in 1989 and went on to work as a
+            chemist/biochemist until 1994. After her work as a chemist she
+            attended Harvard School of Dental Medicine and graduated Magna Cum
+            Laude in 1998. She then went on to do a year of residency at the
+            University of Washington Hospital where she worked in depth treating
+            medically, mentally, and physically challenged adults and children
+            in the operating room and in an emergency room setting.
           </Typography>
           <Box height={100}>
             <div style={{ width: '100%', height: '100%', display: 'flex' }}>
