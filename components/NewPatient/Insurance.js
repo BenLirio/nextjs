@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   List,
   ListItem,
@@ -13,11 +13,18 @@ import {
   Card,
   CardHeader,
   CardContent,
-  CardMedia
+  CardMedia,
+  Collapse,
+  CardActions,
+  Button
 } from '@material-ui/core'
 import InfoIcon from '@material-ui/icons/Info'
 
 const Insurance = () => {
+  const [open, setOpen] = useState(false)
+  const toggleOpen = () => {
+    setOpen(!open)
+  }
   return (
     <>
       <Card>
@@ -40,25 +47,32 @@ const Insurance = () => {
             you are ultimately responsible for the entire treatment fee.
           </Typography>
         </CardContent>
-        <CardContent>
-          <List subheader={<ListSubheader>Accepted Insurance</ListSubheader>}>
-            <ListItem>
-              <ListItemText primary="Delta Dental Premier" />
-            </ListItem>
-            <ListItem>
-              <ListItemText primary=" Blue Cross Blue Shield" />
-            </ListItem>
-            <ListItem>
-              <ListItemText primary="MetLife" />
-            </ListItem>
-            <ListItem>
-              <ListItemText primary="Aetna" />
-            </ListItem>
-            <ListItem>
-              <ListItemText primary="Many more" />
-            </ListItem>
-          </List>
-        </CardContent>
+        <CardActions>
+          <Button variant="text" onClick={toggleOpen}>
+            {!open ? 'Accepted Insurance' : 'hide'}
+          </Button>
+        </CardActions>
+        <Collapse in={open}>
+          <CardContent>
+            <List>
+              <ListItem>
+                <ListItemText primary="Delta Dental Premier" />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary=" Blue Cross Blue Shield" />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="MetLife" />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="Aetna" />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="Many more" />
+              </ListItem>
+            </List>
+          </CardContent>
+        </Collapse>
       </Card>
     </>
   )
