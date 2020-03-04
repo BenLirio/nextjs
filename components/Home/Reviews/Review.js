@@ -16,9 +16,7 @@ const Review = ({ review }) => {
               name={review.id.toString()}
               value={review.rating}
             />
-            <Typography>
-              {moment(review.created).format('MM/DD/YYYY')}
-            </Typography>
+            <Typography>{moment(review.created).fromNow()}</Typography>
           </>
         }
       />
