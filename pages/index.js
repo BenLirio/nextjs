@@ -20,8 +20,8 @@ export default function Index({ reviews, stats }) {
           <Reviews stats={stats} reviews={reviews} />
         </StatsContextProvider>
       </ReviewsContextProvider>
-      <Ada />
       <MapRow />
+      <Ada />
     </>
   )
 }
