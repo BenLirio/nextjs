@@ -35,7 +35,7 @@ const index = () => {
       </Grid>
       <Grid item xs={12}>
         <Typography ref={myRef} variant="h3">
-          A-Z Services
+          All Services
         </Typography>
       </Grid>
       <Grid item xs={4}>

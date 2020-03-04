@@ -16,14 +16,14 @@ const ServiceFeature = ({ age }) => {
   let image = ''
   switch (age) {
     case 'young': {
-      title = "For Children's"
+      title = 'For Children'
       description =
         'At Ona Healthy Smile we provide comprehensive dental care for children and adolescents. All members of our team are committed to creating a compassionate and stress-free dental experience for your child.'
       image = '/services/featured_services/young.jpeg'
       break
     }
     case 'mid': {
-      title = 'For Adult'
+      title = 'For Adults'
       description =
         'It is very important to keep your teeth and gums in good health. We can help you maintain a healthy smile for a lifetime.'
       image = '/services/featured_services/mid.jpeg'
