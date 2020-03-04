@@ -6,6 +6,7 @@ import Review from './Review'
 
 const Reviews = () => {
   const reviews = useContext(ReviewsContext)
+  console.log('reviews', reviews)
   const [currentReviews, setCurrentReviews] = useState([0, 1, 2])
   return (
     <>

@@ -1,4 +1,34 @@
+import moment from 'moment'
+import Reviews from '../../components/Home/Reviews/Reviews'
+
 export default reviews => {
+  const filteredReviews = reviews
+    .map(review => {
+      // User id & text & title
+      const { id, text, title, rating } = review
+      // get name from first and last
+      const { authorFirstName, authorLastName } = review
+      const lastInitial =
+        authorLastName && authorLastName.slice(0, 1).toUpperCase()
+      const name = `${authorFirstName} ${lastInitial}.`
+      // created
+      if (authorFirstName == 'Jamel') {
+        console.log('review', review)
+      }
+      const created = moment(review.createdDate)
+
+      return { id, name, text, title, created, rating }
+    })
+    .sort((a, b) => {
+      if (a.created.isBefore(b.created)) {
+        return 1
+      } else if (a.created.isAfter(b.created)) {
+        return -1
+      } else {
+        return 0
+      }
+    })
+  return filteredReviews
   return reviews
     .sort((a, b) => {
       const dateOne =
@@ -13,14 +43,7 @@ export default reviews => {
         name: review.authorFirstName || '' + ' ' + review.authorLastName || '',
         rating: review.rating,
         title: review.title || '',
-        text: review.text || '',
-        height:
-          Math.floor(review.text.length * 0.75) +
-          32 +
-          18 +
-          60 +
-          (review.title ? 28 : 0) +
-          Math.floor(review.title && review.title.length * 0.6)
+        text: review.text || ''
       }
     })
 }
