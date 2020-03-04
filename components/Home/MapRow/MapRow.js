@@ -9,6 +9,7 @@ import {
 } from '@material-ui/core'
 import React from 'react'
 import GoogleMap from './GoogleMap'
+import hours from '../../../js/about/hours'
 
 const MapRow = () => {
   return (
@@ -24,6 +25,15 @@ const MapRow = () => {
             convenient office hours such as late evenings and even select
             Fridays
           </Typography>
+        </CardContent>
+        <CardContent>
+          {hours.map(({ name, hours }) => {
+            return (
+              <Typography>
+                {name}: {hours}
+              </Typography>
+            )
+          })}
         </CardContent>
 
         <Button color="secondary">Contact</Button>
