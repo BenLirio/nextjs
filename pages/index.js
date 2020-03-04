@@ -9,6 +9,8 @@ import { StatsContextProvider } from '../components/shared/context/StatsContext'
 import data from '../js/RateABiz/data.json'
 import filterReviews from '../js/RateABiz/filter_reviews'
 import filterStats from '../js/RateABiz/filter_stats'
+import ServiceCta from '../components/Services/ServiceCta'
+import { Grid } from '@material-ui/core'
 
 export default function Index({ reviews, stats }) {
   return (
@@ -20,6 +22,9 @@ export default function Index({ reviews, stats }) {
           <Reviews stats={stats} reviews={reviews} />
         </StatsContextProvider>
       </ReviewsContextProvider>
+      <Grid item xs={12}>
+        <ServiceCta />
+      </Grid>
       <MapRow />
       <Ada />
     </>

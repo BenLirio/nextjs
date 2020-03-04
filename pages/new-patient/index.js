@@ -4,6 +4,7 @@ import MapRow from '../../components/Home/MapRow/MapRow'
 import Faq from '../../components/NewPatient/Faq'
 import Insurance from '../../components/NewPatient/Insurance'
 import Payment from '../../components/NewPatient/Payment'
+import ServiceCta from '../../components/Services/ServiceCta'
 
 const index = () => {
   return (
@@ -18,6 +19,9 @@ const index = () => {
       </Grid>
       <Grid item xs={5}>
         <Faq />
+      </Grid>
+      <Grid item xs={12}>
+        <ServiceCta />
       </Grid>
       <MapRow />
     </>

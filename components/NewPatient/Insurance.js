@@ -12,7 +12,8 @@ import {
   Typography,
   Card,
   CardHeader,
-  CardContent
+  CardContent,
+  CardMedia
 } from '@material-ui/core'
 import InfoIcon from '@material-ui/icons/Info'
 
@@ -21,6 +22,10 @@ const Insurance = () => {
     <>
       <Card>
         <CardHeader title="Insurance" />
+        <CardMedia
+          image="/new-patient/insurance.jpeg"
+          style={{ height: '200px' }}
+        />
         <CardContent>
           <Typography variant="body1">
             We are happy to submit the forms necessary to see that you receive
