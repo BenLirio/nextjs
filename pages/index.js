@@ -2,7 +2,7 @@ import React from 'react'
 import Reviews from '../components/Home/Reviews/Reviews'
 import MapRow from '../components/Home/MapRow/MapRow'
 import Ada from '../components/Home/Ada/Ada'
-import NewSmile from '../components/Home/NewSmile/NewSmile'
+import Features from '../components/Home/Features/Features'
 import YourDoctor from '../components/Home/YourDoctor/YourDoctor'
 import { ReviewsContextProvider } from '../components/shared/context/ReviewsContext'
 import { StatsContextProvider } from '../components/shared/context/StatsContext'
@@ -15,7 +15,7 @@ import { Grid } from '@material-ui/core'
 export default function Index({ reviews, stats }) {
   return (
     <>
-      <NewSmile />
+      <Features />
       <YourDoctor />
       <ReviewsContextProvider reviews={reviews}>
         <StatsContextProvider stats={stats}>
