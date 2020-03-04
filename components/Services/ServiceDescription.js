@@ -1,6 +1,12 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { Card, CardHeader, CardContent, Typography } from '@material-ui/core'
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  Typography,
+  Box
+} from '@material-ui/core'
 
 const ServiceDescription = () => {
   const {
@@ -12,7 +18,7 @@ const ServiceDescription = () => {
         <Card>
           <CardHeader title={service} />
           <CardContent>
-            <Typography variant="h5">What is a {service}</Typography>
+            <Typography variant="h6">What is a {service}</Typography>
             <Typography variant="body1" color="textSecondary">
               The crown of your tooth is the visible top or the area of the
               tooth that is above the gum line. A dental crown (commonly called
@@ -20,14 +26,16 @@ const ServiceDescription = () => {
               been worn away by decay, fractured off or been endodontically
               treated.
             </Typography>
-            <Typography variant="h5">Who does a {service} benefit?</Typography>
+            <Box m={1} />
+            <Typography variant="h6">Who does a {service} benefit?</Typography>
             <Typography variant="body1" color="textSecondary">
               Anyone with extensive damage or a generally weak tooth will
               benefit from the protection given by the covering nature of a
               crown. Dr. Ona is the best judge of when you would need a crown
               and it is best to trust his or her judgment.
             </Typography>
-            <Typography variant="h5">How it is done</Typography>
+            <Box m={1} />
+            <Typography variant="h6">How it is done</Typography>
             <Typography variant="body1" color="textSecondary">
               Dr. Ona will remove any decay and prepare the tooth for a crown to
               be fit over your tooth. Then an impression is made of the prepared

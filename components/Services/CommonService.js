@@ -23,7 +23,7 @@ const CommonService = ({ myRef }) => {
   }
   return (
     <>
-      <Typography variant="h4">Common Service</Typography>
+      <Typography variant="h4">Common Services</Typography>
       <List>
         {services.map(service => {
           return (

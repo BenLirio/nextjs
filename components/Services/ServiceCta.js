@@ -3,16 +3,17 @@ import { Typography, Button } from '@material-ui/core'
 
 const ServiceCta = () => {
   return (
-    <div style={{ display: 'flex', marginTop: '24px', marginBottom: '24px' }}>
-      <div>
-        <Typography variant="h4">Have more questions?</Typography>
-        <Typography variant="subtitle1">Feel free to call</Typography>
-      </div>
-      <div style={{ flex: '1' }}></div>
-      <div>
-        <Button>(123) 456 789</Button>
-      </div>
-    </div>
+    <>
+      <Typography variant="h4" align="center">
+        Have more questions?
+      </Typography>
+      <Typography variant="subtitle1" align="center">
+        Feel free to call
+      </Typography>
+      <Typography variant="h5" color="primary" align="center">
+        (123) 456 789
+      </Typography>
+    </>
   )
 }
 

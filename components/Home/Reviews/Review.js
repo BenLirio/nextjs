@@ -1,27 +1,29 @@
-import React from 'react'
-import {
-  Card,
-  CardHeader,
-  Typography,
-  CardContent,
-  makeStyles
-} from '@material-ui/core'
+import { Card, CardContent, Typography, CardHeader } from '@material-ui/core'
 import { Rating } from '@material-ui/lab'
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    borderRadius: theme.shape.medium.borderRadius
-  }
-}))
+import React from 'react'
+import moment from 'moment'
 
 const Review = ({ review }) => {
-  const classes = useStyles()
+  console.log('review', review)
   return (
-    <Card variant="outlined" className={classes.root}>
+    <Card>
+      <CardHeader
+        title={review.title}
+        subheader={
+          <>
+            <Rating
+              readOnly
+              name={review.id.toString()}
+              value={review.rating}
+            />
+            <Typography>{moment(review.created).fromNow()}</Typography>
+          </>
+        }
+      />
       <CardContent>
-        <Typography variant="h5">{review.title}</Typography>
-        <Rating name={review.id.toString()} value={review.rating} />
         <Typography color="textSecondary">{review.text}</Typography>
+      </CardContent>
+      <CardContent>
         <Typography>- {review.name}</Typography>
       </CardContent>
     </Card>

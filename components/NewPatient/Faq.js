@@ -73,7 +73,6 @@ const Faq = () => {
                   <ListItemText primary={answer} />
                 </ListItem>
               </Collapse>
-              <Divider />
             </div>
           )
         })}

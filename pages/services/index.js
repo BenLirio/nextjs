@@ -18,6 +18,9 @@ const index = () => {
       <Grid item xs={5}>
         <CommonService myRef={myRef} />
       </Grid>
+      <Grid item xs={12}>
+        <Box m={1} />
+      </Grid>
       <Grid item xs={4}>
         <ServiceFeature age="young" />
       </Grid>
@@ -29,6 +32,11 @@ const index = () => {
       </Grid>
       <Grid item xs={12}>
         <ServiceCta />
+      </Grid>
+      <Grid item xs={12}>
+        <Typography ref={myRef} variant="h3">
+          All Services
+        </Typography>
       </Grid>
       <Grid item xs={4}>
         <ServiceList myRef={myRef} />

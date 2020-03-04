@@ -7,11 +7,14 @@ const theme = createMuiTheme({
       variant: 'contained',
       color: 'primary'
     },
-    MuiCard: {
-      variant: 'outlined'
-    }
+    MuiCard: {}
   },
   overrides: {
+    MuiListItem: {
+      root: {
+        borderRadius: '12px'
+      }
+    },
     MuiCard: {
       root: {
         borderRadius: '12px'
