@@ -39,9 +39,6 @@ const Features = () => {
       <Grid item xs={4}>
         <Feature type="other" />
       </Grid>
-      <Grid item xs={12}>
-        <Button onClick={() => router.push('/services')}>View services</Button>
-      </Grid>
     </>
   )
 }
