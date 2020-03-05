@@ -1,5 +1,6 @@
 import React from 'react'
 import { Typography, Grid, Box } from '@material-ui/core'
+import Image from '../shared/Image'
 
 const MissionStatement = () => {
   return (
@@ -16,7 +17,9 @@ const MissionStatement = () => {
         </Typography>
       </Grid>
       <Grid item xs={4}>
-        <Box height={400} bgcolor="info.dark" />
+        <Box height={400}>
+          <Image src="/about/hannah.jpg" />
+        </Box>
       </Grid>
     </>
   )

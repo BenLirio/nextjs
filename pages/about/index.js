@@ -9,11 +9,13 @@ const about = () => {
   return (
     <>
       <Grid item xs={4}>
-        <Box height={400} bgcolor="info.dark" />
+        <Box height={400} bgcolor="info.dark">
+          <Image src="/about/arch.jpg" />
+        </Box>
       </Grid>
       <Grid item xs={8}>
         <Box height={400}>
-          <Image src="/dummy/900x400.png" />
+          <Image src="/about/hattie_and_ona.jpg" />
         </Box>
       </Grid>
       <MissionStatement />

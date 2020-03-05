@@ -5,7 +5,7 @@ import Image from '../shared/Image'
 const ServiceImage = () => {
   return (
     <Box height={400}>
-      <Image src="/services/toothbrush.jpeg" />
+      <Image src="/services/assistant.jpg" />
     </Box>
   )
 }
