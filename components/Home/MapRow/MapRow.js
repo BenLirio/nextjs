@@ -21,9 +21,9 @@ const MapRow = () => {
       <Grid item xs={6}>
         <CardContent>
           <Typography variant="body1">
-            We know your time is valuable so at Healthy Smile, we offer
-            convenient office hours such as late evenings and even select
-            Fridays.
+            We value your time at Healthy Smile, offering convenient office
+            hours such as late evenings and select Fridays. Please contact us
+            with any questions or to schedule an appointment.
           </Typography>
         </CardContent>
         <CardContent>
