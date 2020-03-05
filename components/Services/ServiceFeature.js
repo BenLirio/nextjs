@@ -19,14 +19,14 @@ const ServiceFeature = ({ age }) => {
       title = 'For Children'
       description =
         'At Ona Healthy Smile we provide comprehensive dental care for children and adolescents. All members of our team are committed to creating a compassionate and stress-free dental experience for your child.'
-      image = '/services/featured_services/young.jpeg'
+      image = '/services/featured_services/play_area.jpg'
       break
     }
     case 'mid': {
       title = 'For Adults'
       description =
         'It is very important to keep your teeth and gums in good health. We can help you maintain a healthy smile for a lifetime.'
-      image = '/services/featured_services/mid.jpeg'
+      image = '/services/featured_services/operation.jpg'
       break
     }
     case 'old': {
