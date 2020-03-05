@@ -44,7 +44,7 @@ const Banner = () => {
           </Grid>
           <Grid item>
             <Box p={1}>
-              <Button color="secondary">Call today</Button>
+              <Button color="secondary">contact</Button>
             </Box>
           </Grid>
         </Grid>

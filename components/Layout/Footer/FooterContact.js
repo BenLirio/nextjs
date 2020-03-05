@@ -12,7 +12,10 @@ const FooterContact = () => {
         Email: info@onahealthysmile.com
       </Typography>
       <Typography variant="subtitle2" color="textSecondary">
-        Address: PO Box 8228 Kentwood, MI 49518
+        Address: 2021 44th St SE, Grand Rapids, MI 49508
+      </Typography>
+      <Typography variant="subtitle2" color="textSecondary">
+        PO Box: 8228 Kentwood, MI 49518
       </Typography>
     </>
   )

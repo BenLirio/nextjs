@@ -10,8 +10,8 @@ const ServiceCta = () => {
       <Typography variant="subtitle1" align="center">
         Feel free to call
       </Typography>
-      <Typography variant="h5" color="primary" align="center">
-        (123) 456 789
+      <Typography variant="h5" align="center">
+        (616) 281 8338
       </Typography>
     </>
   )
