@@ -7,11 +7,23 @@ import {
   Button,
   Collapse,
   CardContent,
-  Typography
+  Typography,
+  makeStyles
 } from '@material-ui/core'
 import { useRouter } from 'next/router'
 
+const useStyles = makeStyles(theme => ({
+  card: {
+    transition: 'all .2s ease-in-out',
+    '&:hover': {
+      transform: 'scale(1.02)',
+      cursor: 'pointer'
+    }
+  }
+}))
+
 const Feature = ({ type }) => {
+  const classes = useStyles()
   const [open, setOpen] = useState(false)
   const toggleOpen = () => {
     setOpen(!open)
@@ -47,7 +59,7 @@ const Feature = ({ type }) => {
     }
   }
   return (
-    <Card>
+    <Card className={classes.card}>
       <CardHeader title={title} />
       <CardMedia image={image} style={{ height: '200px' }} />
     </Card>
