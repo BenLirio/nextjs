@@ -11,6 +11,7 @@ import {
 } from '@material-ui/core'
 import { useRouter } from 'next/router'
 import FeatureImage from '../Home/FeatureImage/FeatureImage'
+import Banner from './Header/Banner'
 
 const useStyles = makeStyles(theme => ({
   root: {

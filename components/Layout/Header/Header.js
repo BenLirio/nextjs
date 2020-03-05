@@ -12,6 +12,7 @@ const Header = () => {
   return (
     <>
       <AppBar>
+        <Banner />
         <Tabs value={/\/?[^\/]*/.exec(pathname)[0]}>
           <Tab href="/" value="/" component={Link} naked label="Home" />
           <Tab
@@ -38,6 +39,7 @@ const Header = () => {
         </Tabs>
       </AppBar>
       <Tabs />
+      <Banner />
     </>
   )
 }

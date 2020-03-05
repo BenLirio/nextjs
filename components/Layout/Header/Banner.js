@@ -5,7 +5,8 @@ import {
   Button,
   Dialog,
   DialogTitle,
-  makeStyles
+  makeStyles,
+  Typography
 } from '@material-ui/core'
 import Image from '../../shared/Image'
 import Hours from './Hours'
@@ -29,23 +30,22 @@ const Banner = () => {
   const [open, setOpen] = useState(false)
   return (
     <>
-      <Dialog onClose={() => setOpen(false)} open={open}>
-        <Hours />
-      </Dialog>
-      <Box p={2} height={80} bgcolor="background.default">
-        <Grid container align="right">
+      <Box bgcolor="background.default">
+        <Grid container alignItems="center">
           <Grid item xs={1}>
-            <div className={classes.logo}></div>
+            <Box height={70} p={1}>
+              <Image src="/home/crop_logo.svg" size="contain" />
+            </Box>
           </Grid>
-          <Grid item xs></Grid>
-          <Grid item xs={6}>
-            {/* <Button
-              variant="contained"
-              color="secondary"
-              onClick={() => setOpen(true)}
-            >
-              Hours & location
-            </Button> */}
+          <Grid item xs>
+            <Typography variant="h5" color="textSecondary" align="center">
+              At Healthy Smile we are a family
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Box p={1}>
+              <Button color="secondary">Call today</Button>
+            </Box>
           </Grid>
         </Grid>
       </Box>
