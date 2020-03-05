@@ -26,12 +26,12 @@ const Footer = () => {
           <Grid item xs={4} container>
             <Grid item xs={12}>
               <Box height={40}>
-                <Image src="home/ada.png" size="contain" />
+                <Image src="/home/ada.png" size="contain" />
               </Box>
             </Grid>
             <Grid item xs={12}>
               <Box height={40}>
-                <Image src="home/mda.png" size="contain" />
+                <Image src="/home/mda.png" size="contain" />
               </Box>
             </Grid>
           </Grid>
