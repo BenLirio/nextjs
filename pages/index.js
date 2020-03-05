@@ -26,7 +26,6 @@ export default function Index({ reviews, stats }) {
         <ServiceCta />
       </Grid>
       <MapRow />
-      <Ada />
     </>
   )
 }
