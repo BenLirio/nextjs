@@ -17,7 +17,7 @@ import Image from '../../shared/Image'
 
 const Footer = () => {
   return (
-    <Box paddingTop={5} boxShadow={3}>
+    <Box paddingTop={5} boxShadow={3} bgcolor="background.paper">
       <Container>
         <Grid container>
           <Grid item xs={4}>
