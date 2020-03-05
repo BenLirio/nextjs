@@ -4,7 +4,6 @@ import React from 'react'
 import moment from 'moment'
 
 const Review = ({ review }) => {
-  console.log('review', review)
   return (
     <Card>
       <CardHeader

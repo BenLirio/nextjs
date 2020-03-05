@@ -22,9 +22,7 @@ export default function Index({ reviews, stats }) {
           <Reviews stats={stats} reviews={reviews} />
         </StatsContextProvider>
       </ReviewsContextProvider>
-      <Grid item xs={12}>
-        <ServiceCta />
-      </Grid>
+
       <MapRow />
     </>
   )
