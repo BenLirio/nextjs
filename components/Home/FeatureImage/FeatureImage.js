@@ -5,10 +5,7 @@ import Image from '../../shared/Image'
 const FeatureImage = () => {
   return (
     <Grid item xs={12}>
-      <Box height={450}>
-        <div style={{ position: 'absolute', left: '48px' }}>
-          <Typography variant="h1">Healthy Smile</Typography>
-        </div>
+      <Box height={450} marginBottom={-20}>
         <Image src="/home/feature/feature_1.jpeg"></Image>
       </Box>
     </Grid>

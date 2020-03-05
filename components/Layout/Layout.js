@@ -14,9 +14,11 @@ import FeatureImage from '../Home/FeatureImage/FeatureImage'
 import Banner from './Header/Banner'
 
 const useStyles = makeStyles(theme => ({
-  root: {
+  body: {
     paddingTop: theme.spacing(5),
-    paddingBottom: theme.spacing(5),
+    paddingBottom: theme.spacing(5)
+  },
+  root: {
     background: theme.palette.background.offset
   },
   container: {
@@ -56,10 +58,10 @@ const Layout = ({ children }) => {
     }
   }
   return (
-    <>
+    <div className={classes.root}>
       <Header />
       {pathname === '/' ? <FeatureImage /> : null}
-      <div className={classes.root}>
+      <div className={classes.body}>
         <Container className={classes.container}>
           <Grid container justify="center" spacing={5}>
             <Grid item xs={12}>
@@ -71,7 +73,7 @@ const Layout = ({ children }) => {
       </div>
 
       <Footer />
-    </>
+    </div>
   )
 }
 
