@@ -49,17 +49,7 @@ const Feature = ({ type }) => {
   return (
     <Card>
       <CardHeader title={title} />
-      <CardMedia image={image} style={{ height: '150px' }} />
-      <CardActions>
-        <Button onClick={toggleOpen} variant="text">
-          {!open ? 'Learn more' : 'hide'}
-        </Button>
-      </CardActions>
-      <Collapse in={open}>
-        <CardContent>
-          <Typography>{description}</Typography>
-        </CardContent>
-      </Collapse>
+      <CardMedia image={image} style={{ height: '200px' }} />
     </Card>
   )
 }
