@@ -31,13 +31,13 @@ const Features = () => {
         <Typography variant="h3">How we help you</Typography>
       </Grid>
       <Grid item xs={4}>
+        <Feature type="family" />
+      </Grid>
+      <Grid item xs={4}>
         <Feature type="cosmetic" />
       </Grid>
       <Grid item xs={4}>
-        <Feature type="preventative" />
-      </Grid>
-      <Grid item xs={4}>
-        <Feature type="other" />
+        <Feature type="hospital" />
       </Grid>
     </>
   )
