@@ -25,7 +25,7 @@ class GoogleMap extends Component {
     }
   }
   render() {
-    const activate = true
+    const activate = false
     const key = activate ? 'AIzaSyA2A1xc8sr0OQpnDuwyj0kv4LCSw7jMMlA' : ''
     return (
       // Important! Always set the container height explicitly
