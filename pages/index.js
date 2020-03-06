@@ -11,12 +11,13 @@ import filterReviews from '../js/RateABiz/filter_reviews'
 import filterStats from '../js/RateABiz/filter_stats'
 import ServiceCta from '../components/Services/ServiceCta'
 import { Grid } from '@material-ui/core'
+import Doctors from '../components/Home/Doctors/Doctors'
 
 export default function Index({ reviews, stats }) {
   return (
     <>
       <Features />
-      <YourDoctor />
+      <Doctors />
       <ReviewsContextProvider reviews={reviews}>
         <StatsContextProvider stats={stats}>
           <Reviews stats={stats} reviews={reviews} />
