@@ -12,6 +12,17 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../components/shared/theme'
 import Layout from '../components/Layout/Layout'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import {
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
+  Button
+} from '@material-ui/core'
+import hours from '../js/about/hours'
+import ContactDialog from '../components/Dialogs/ContactDialog'
+import { DialogContextProvider } from '../components/Dialogs/dialog-context'
 
 // Customize the APP that next creates
 export default class MyApp extends App {
@@ -33,7 +44,7 @@ export default class MyApp extends App {
     // this is a wrapper component which wraps the page passed into a head and theme provider
     // this is just for style reasons.
     return (
-      <React.Fragment>
+      <>
         <Head>
           <title>My page</title>
           <meta
@@ -42,13 +53,16 @@ export default class MyApp extends App {
           />
         </Head>
         <ThemeProvider theme={theme}>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <CssBaseline />
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <DialogContextProvider>
+            <ContactDialog />
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+            <CssBaseline />
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          </DialogContextProvider>
         </ThemeProvider>
-      </React.Fragment>
+      </>
     )
   }
 }

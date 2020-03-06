@@ -13,8 +13,11 @@ import {
 import React from 'react'
 import GoogleMap from './GoogleMap'
 import hours from '../../../js/about/hours'
+import { useContext } from 'react'
+import DialogContext from '../../Dialogs/dialog-context'
 
 const MapRow = () => {
+  const setOpen = useContext(DialogContext)[1]
   return (
     <>
       <Grid item xs={12}>
@@ -38,7 +41,9 @@ const MapRow = () => {
           })}
         </CardContent>
         <CardActions>
-          <Button color="secondary">Contact</Button>
+          <Button onClick={() => setOpen(true)} color="secondary">
+            Contact
+          </Button>
         </CardActions>
       </Grid>
       <Grid item xs={6}>

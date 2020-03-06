@@ -6,10 +6,13 @@ import {
   Dialog,
   DialogTitle,
   makeStyles,
-  Typography
+  Typography,
+  DialogContent
 } from '@material-ui/core'
 import Image from '../../shared/Image'
 import Hours from './Hours'
+import { useContext } from 'react'
+import DialogContext from '../../Dialogs/dialog-context'
 
 const useStyles = makeStyles(theme => ({
   logo: {
@@ -27,7 +30,7 @@ const useStyles = makeStyles(theme => ({
 
 const Banner = () => {
   const classes = useStyles()
-  const [open, setOpen] = useState(false)
+  const setOpen = useContext(DialogContext)[1]
   return (
     <>
       <Box bgcolor="background.default">
@@ -44,7 +47,9 @@ const Banner = () => {
           </Grid>
           <Grid item>
             <Box p={1}>
-              <Button color="secondary">contact</Button>
+              <Button onClick={() => setOpen(true)} color="secondary">
+                contact
+              </Button>
             </Box>
           </Grid>
         </Grid>
