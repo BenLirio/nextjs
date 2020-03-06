@@ -53,7 +53,7 @@ const Feature = ({ type }) => {
       <CardMedia image={image} style={{ height: '200px' }} />
       <CardActions>
         <Button onClick={() => router.push(`/${type}`)} variant="text">
-          Open
+          View
         </Button>
       </CardActions>
     </Card>
