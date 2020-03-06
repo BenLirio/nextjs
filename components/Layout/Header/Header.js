@@ -29,13 +29,6 @@ const Header = () => {
             naked
             label="services"
           />
-          <Tab
-            href="/about/"
-            value="/about"
-            component={Link}
-            naked
-            label="about"
-          />
         </Tabs>
       </AppBar>
       <Tabs />
