@@ -44,12 +44,16 @@ const Layout = ({ children }) => {
       title = 'New Patient Information'
       break
     }
-    case 'services': {
-      title = 'Services'
+    case 'family': {
+      title = 'Family'
       break
     }
-    case 'about': {
-      title = 'About'
+    case 'cosmetic': {
+      title = 'Cosmetic'
+      break
+    }
+    case 'hospital': {
+      title = 'Hospital'
       break
     }
     default: {

@@ -4,9 +4,9 @@ module.exports = {
     const paths = {
       '/': { page: '/' },
       '/about': { page: '/about' },
-      '/services': { page: '/services' },
-      '/services/cosmetic': { page: '/services/cosmetic' },
-      '/services/preventative': { page: '/services/preventative' },
+      '/family': { page: '/family' },
+      '/cosmetic': { page: '/cosmetic' },
+      '/hospital': { page: '/hospital' },
       '/new-patient': { page: '/new-patient' }
     }
 

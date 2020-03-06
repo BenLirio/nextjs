@@ -10,27 +10,27 @@ import {
   Collapse
 } from '@material-ui/core'
 
-const ServiceFeature = ({ age }) => {
+const ServiceFeature = ({ service }) => {
   let title = ''
   let description = ''
   let image = ''
-  switch (age) {
-    case 'young': {
-      title = 'For Children'
+  switch (service) {
+    case 'family': {
+      title = 'Family'
       description =
         'At Ona Healthy Smile we provide comprehensive dental care for children and adolescents. All members of our team are committed to creating a compassionate and stress-free dental experience for your child.'
       image = '/services/featured_services/play_area.jpg'
       break
     }
-    case 'mid': {
-      title = 'For Adults'
+    case 'cosmetic': {
+      title = 'Cosmetic'
       description =
         'It is very important to keep your teeth and gums in good health. We can help you maintain a healthy smile for a lifetime.'
       image = '/services/featured_services/operation.jpg'
       break
     }
-    case 'old': {
-      title = 'For Elderly'
+    case 'hospital': {
+      title = 'Hospital'
       description =
         'The goal of restorations is to replace missing teeth lost by decay or injury, protect the part of the tooth that remains, and restore the tooth’s shape and function.'
       image = '/services/featured_services/old.jpeg'
@@ -53,15 +53,6 @@ const ServiceFeature = ({ age }) => {
           {!more ? 'Learn more' : 'less'}
         </Button>
       </CardActions>
-      <Collapse in={more}>
-        <CardContent>
-          <Typography>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repellendus, mollitia quae est quidem sit molestiae? Consectetur
-            dolores perspiciatis error corporis.
-          </Typography>
-        </CardContent>
-      </Collapse>
     </Card>
   )
 }

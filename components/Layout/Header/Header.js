@@ -23,11 +23,25 @@ const Header = () => {
             label="New Patient"
           />
           <Tab
-            href="/services/"
-            value="/services"
+            href="/family/"
+            value="/family"
             component={Link}
             naked
-            label="services"
+            label="family"
+          />
+          <Tab
+            href="/cosmetic/"
+            value="/cosmetic"
+            component={Link}
+            naked
+            label="cosmetic"
+          />
+          <Tab
+            href="/hospital/"
+            value="/hospital"
+            component={Link}
+            naked
+            label="hospital"
           />
         </Tabs>
       </AppBar>

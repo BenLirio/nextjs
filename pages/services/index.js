@@ -12,37 +12,17 @@ const index = () => {
   const myRef = useRef(null)
   return (
     <>
-      <Grid item xs={7}>
-        <ServiceImage />
-      </Grid>
-      <Grid item xs={5}>
-        <CommonService myRef={myRef} />
-      </Grid>
-      <Grid item xs={12}>
-        <Box m={1} />
+      <Grid item xs={4}>
+        <ServiceFeature service="family" />
       </Grid>
       <Grid item xs={4}>
-        <ServiceFeature age="young" />
+        <ServiceFeature service="cosmetic" />
       </Grid>
       <Grid item xs={4}>
-        <ServiceFeature age="mid" />
-      </Grid>
-      <Grid item xs={4}>
-        <ServiceFeature age="old" />
+        <ServiceFeature service="hospital" />
       </Grid>
       <Grid item xs={12}>
         <ServiceCta />
-      </Grid>
-      <Grid item xs={12}>
-        <Typography ref={myRef} variant="h3">
-          All Services
-        </Typography>
-      </Grid>
-      <Grid item xs={4}>
-        <ServiceList myRef={myRef} />
-      </Grid>
-      <Grid item xs={8}>
-        <ServiceDescription />
       </Grid>
     </>
   )

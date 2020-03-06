@@ -23,6 +23,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const Feature = ({ type }) => {
+  const router = useRouter()
   const classes = useStyles()
   let title = ''
   let image = ''
@@ -47,9 +48,14 @@ const Feature = ({ type }) => {
     }
   }
   return (
-    <Card className={classes.card}>
+    <Card>
       <CardHeader title={title} />
       <CardMedia image={image} style={{ height: '200px' }} />
+      <CardActions>
+        <Button onClick={() => router.push(`/${type}`)} variant="text">
+          Open
+        </Button>
+      </CardActions>
     </Card>
   )
 }
